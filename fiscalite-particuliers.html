@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Avocat fiscaliste pour particuliers — Contrôle fiscal, redressement, IFI, plus-values immobilières. Cabinet AQ Lawyer, consultation en visioconférence 150€/45min.">
+  <title>Fiscalité des Particuliers — Cabinet AQ Lawyer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav style="background-color: var(--navy-dark);" class="fixed w-full top-0 z-50 shadow-lg">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3 text-white no-underline">
+          <div style="background-color: var(--gold); color: var(--navy-dark);" class="w-8 h-8 rounded flex items-center justify-center font-bold text-sm">AQ</div>
+          <span class="font-semibold text-sm tracking-wide">Cabinet AQ Lawyer</span>
+        </a>
+        <div class="hidden md:flex items-center gap-6">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <a href="le-cabinet.html" class="nav-link">Le Cabinet</a>
+          <a href="fiscalite-particuliers.html" class="nav-link active">Fiscalité Particuliers</a>
+          <a href="fiscalite-entreprises.html" class="nav-link">Fiscalité Entreprises</a>
+          <a href="droit-des-affaires.html" class="nav-link">Droit des Affaires</a>
+          <a href="international.html" class="nav-link">International</a>
+          <a href="contact.html" class="btn-primary text-sm py-2 px-4 ml-2">Prendre rendez-vous</a>
+        </div>
+        <button class="md:hidden text-white p-2" onclick="toggleMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+      <div id="mobileMenu" class="mobile-menu md:hidden pb-4 border-t border-white border-opacity-10 mt-1">
+        <div class="flex flex-col gap-3 pt-4">
+          <a href="index.html" class="nav-link text-sm">Accueil</a>
+          <a href="le-cabinet.html" class="nav-link text-sm">Le Cabinet</a>
+          <a href="fiscalite-particuliers.html" class="nav-link text-sm active">Fiscalité Particuliers</a>
+          <a href="fiscalite-entreprises.html" class="nav-link text-sm">Fiscalité Entreprises</a>
+          <a href="droit-des-affaires.html" class="nav-link text-sm">Droit des Affaires</a>
+          <a href="international.html" class="nav-link text-sm">International</a>
+          <a href="contact.html" class="btn-primary text-sm py-2 px-4 inline-block mt-2 text-center">Prendre rendez-vous</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="hero pt-28 pb-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl">
+        <span class="section-tag">Particuliers</span>
+        <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-5" style="font-family: 'Playfair Display', serif;">
+          Vous avez reçu un<br>
+          <span style="color: var(--gold);">contrôle fiscal ?</span>
+        </h1>
+        <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+          Ne restez pas seul face à l'administration fiscale. Le Cabinet AQ Lawyer analyse votre dossier, vous explique vos droits et vous défend — en visioconférence, rapidement.
+        </p>
+        <a href="contact.html" class="btn-primary">Consulter un avocat — 150€ / 45 min</a>
+        <p class="text-sm text-gray-400 mt-4">✓ Réponse sous 48h &nbsp;·&nbsp; ✓ Sans déplacement &nbsp;·&nbsp; ✓ Sans engagement</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNAL D'URGENCE -->
+  <section class="py-10 px-6" style="background-color: #FEF3C7; border-top: 3px solid var(--gold);">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6">
+      <div class="text-3xl">⏰</div>
+      <div>
+        <h3 class="font-bold text-lg mb-1" style="color: var(--navy);">Attention aux délais légaux</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">
+          En matière fiscale, les délais pour répondre à l'administration ou former un recours sont stricts et souvent courts (30 jours pour répondre à une proposition de rectification). <strong>Ne tardez pas à consulter.</strong>
+        </p>
+      </div>
+      <a href="contact.html" class="btn-primary whitespace-nowrap flex-shrink-0">Consulter maintenant</a>
+    </div>
+  </section>
+
+  <!-- DOMAINES D'INTERVENTION -->
+  <section style="background-color: var(--cream);" class="py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="section-tag">Nos interventions</span>
+        <h2 class="text-3xl font-bold" style="font-family: 'Playfair Display', serif; color: var(--navy);">
+          Dans quels cas pouvons-nous vous aider ?
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <div class="bg-white rounded-lg p-6 border" style="border-color: var(--cream-dark);">
+          <div class="flex items-start gap-4">
+            <span class="text-2xl mt-1">🔍</span>
+            <div>
+              <h3 class="font-bold mb-2" style="color: var(--navy); font-family: 'Playfair Display', serif;">Contrôle fiscal & redressement</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">
+                Vous avez reçu un avis de vérification, une proposition de rectification ou un redressement fiscal. Nous analysons la proposition, identifions les arguments de défense et répondons à l'administration en votre nom.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 border" style="border-color: var(--cream-dark);">
+          <div class="flex items-start gap-4">
+            <span class="text-2xl mt-1">🏠</span>
+            <div>
+              <h3 class="font-bold mb-2" style="color: var(--navy); font-family: 'Playfair Display', serif;">Plus-values immobilières</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">
+                Vente d'un bien immobilier, calcul de la plus-value taxable, exonérations applicables (résidence principale, durée de détention). Anticipez ou contestez le redressement.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 border" style="border-color: var(--cream-dark);">
+          <div class="flex items-start gap-4">
+            <span class="text-2xl mt-1">💎</span>
+            <div>
+              <h3 class="font-bold mb-2" style="color: var(--navy); font-family: 'Playfair Display', serif;">Impôt sur la Fortune Immobilière (IFI)</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">
+                Évaluation de votre patrimoine immobilier, vérification des exonérations applicables, optimisation de la déclaration IFI ou défense en cas de rectification.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 border" style="border-color: var(--cream-dark);">
+          <div class="flex items-start gap-4">
+            <span class="text-2xl mt-1">📑</span>
+            <div>
+              <h3 class="font-bold mb-2" style="color: var(--navy); font-family: 'Playfair Display', serif;">Déclaration de revenus complexe</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">
+                Revenus fonciers, revenus de capitaux mobiliers, revenus étrangers, revenus professionnels multiples — nous sécurisons votre déclaration et vous aidons à optimiser votre situation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 border" style="border-color: var(--cream-dark);">
+          <div class="flex items-start gap-4">
+            <span class="text-2xl mt-1">🏛️</span>
+            <div>
+              <h3 class="font-bold mb-2" style="color: var(--navy); font-family: 'Playfair Display', serif;">Recours & contentieux fiscal</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">
+                Si la voie amiable échoue, nous vous représentons devant le Tribunal Administratif et les juridictions d'appel pour contester les impositions injustifiées.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 border" style="border-color: var(--cream-dark);">
+          <div class="flex items-start gap-4">
+            <span class="text-2xl mt-1">🎁</span>
+            <div>
+              <h3 class="font-bold mb-2" style="color: var(--navy); font-family: 'Playfair Display', serif;">Donations & successions</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">
+                Optimisation fiscale des transmissions de patrimoine, donations entre vifs, abattements, pacte Dutreil. Anticipez la transmission de votre patrimoine dans les meilleures conditions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMENT ÇA SE PASSE -->
+  <section class="py-16 px-6 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="section-tag">Notre approche</span>
+        <h2 class="text-3xl font-bold" style="font-family: 'Playfair Display', serif; color: var(--navy);">
+          Comment on travaille ensemble
+        </h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="flex gap-5 items-start">
+          <div class="step-number flex-shrink-0">1</div>
+          <div>
+            <h4 class="font-semibold mb-1" style="color: var(--navy);">Vous nous décrivez votre situation</h4>
+            <p class="text-sm text-gray-500">Via le formulaire de contact, en quelques lignes. Pas besoin de préparer un dossier complet — une description simple suffit pour qu'on évalue votre cas.</p>
+          </div>
+        </div>
+        <div class="flex gap-5 items-start">
+          <div class="step-number flex-shrink-0">2</div>
+          <div>
+            <h4 class="font-semibold mb-1" style="color: var(--navy);">Consultation de 45 minutes en visio</h4>
+            <p class="text-sm text-gray-500">150€ forfait fixe. On analyse votre dossier, on vous explique clairement vos options et les risques. Vous repartez avec une stratégie, pas avec du jargon.</p>
+          </div>
+        </div>
+        <div class="flex gap-5 items-start">
+          <div class="step-number flex-shrink-0">3</div>
+          <div>
+            <h4 class="font-semibold mb-1" style="color: var(--navy);">Devis & mission si vous souhaitez continuer</h4>
+            <p class="text-sm text-gray-500">Si votre situation nécessite un accompagnement approfondi (rédaction de mémoire, représentation), nous vous proposons un devis sur mesure. Aucune surprise, aucun engagement avant votre accord.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section style="background-color: var(--cream);" class="py-16 px-6">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="section-tag">Questions fréquentes</span>
+        <h2 class="text-3xl font-bold" style="font-family: 'Playfair Display', serif; color: var(--navy);">
+          Ce que nos clients demandent souvent
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+        <details class="bg-white rounded-lg border p-5" style="border-color: var(--cream-dark);">
+          <summary class="font-semibold cursor-pointer" style="color: var(--navy);">J'ai reçu une proposition de rectification — est-il encore temps de réagir ?</summary>
+          <p class="text-sm text-gray-600 mt-3 leading-relaxed">Oui, dans la grande majorité des cas. Vous disposez de 30 jours pour répondre à une proposition de rectification. Un avocat peut rédiger une réponse motivée qui peut réduire significativement le montant du redressement ou l'annuler. Contactez-nous dès réception du document.</p>
+        </details>
+
+        <details class="bg-white rounded-lg border p-5" style="border-color: var(--cream-dark);">
+          <summary class="font-semibold cursor-pointer" style="color: var(--navy);">Combien coûte une défense face à un contrôle fiscal ?</summary>
+          <p class="text-sm text-gray-600 mt-3 leading-relaxed">La première consultation est à 150€ (45 min). Pour la suite, chaque dossier étant unique (complexité, enjeux, démarches nécessaires), nous établissons un devis détaillé avant tout engagement. Vous connaissez le coût exact avant de décider.</p>
+        </details>
+
+        <details class="bg-white rounded-lg border p-5" style="border-color: var(--cream-dark);">
+          <summary class="font-semibold cursor-pointer" style="color: var(--navy);">Peut-on vraiment contester un redressement fiscal ?</summary>
+          <p class="text-sm text-gray-600 mt-3 leading-relaxed">Oui. L'administration fiscale commet des erreurs — sur les faits, les règles applicables ou les calculs. Une contestation argumentée aboutit fréquemment à une réduction ou à un abandon total du redressement. Encore faut-il identifier les bons arguments au bon moment.</p>
+        </details>
+
+        <details class="bg-white rounded-lg border p-5" style="border-color: var(--cream-dark);">
+          <summary class="font-semibold cursor-pointer" style="color: var(--navy);">Je suis en dehors de Paris — puis-je quand même être accompagné ?</summary>
+          <p class="text-sm text-gray-600 mt-3 leading-relaxed">Absolument. Toutes nos consultations se font en visioconférence. Nous accompagnons des clients partout en France métropolitaine, sans contrainte de déplacement.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section style="background-color: var(--navy);" class="py-14 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-white mb-4" style="font-family: 'Playfair Display', serif;">
+        Ne laissez pas l'administration avoir le dernier mot
+      </h2>
+      <p class="text-gray-300 mb-8">Une première consultation vous donne déjà une vision claire de vos options.</p>
+      <a href="contact.html" class="btn-primary text-base">Prendre rendez-vous — 150€ / 45 min</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-12 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-4 gap-8 mb-10">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <div style="background-color: var(--gold);" class="w-8 h-8 rounded flex items-center justify-center font-bold text-sm text-white">AQ</div>
+            <span class="font-semibold text-white">Cabinet AQ Lawyer</span>
+          </div>
+          <p class="text-sm leading-relaxed mb-4" style="color: rgba(255,255,255,0.55);">Avocat au Barreau des Hauts-de-Seine — Spécialiste en droit fiscal et droit des affaires.<br>Consultations 100% en visioconférence, partout en France.</p>
+          <p class="text-xs" style="color: rgba(255,255,255,0.35);">Réponse sous 48h ouvrées</p>
+        </div>
+        <div>
+          <h5 class="text-white font-semibold text-sm mb-4">Domaines</h5>
+          <ul class="space-y-2 text-sm">
+            <li><a href="fiscalite-particuliers.html">Fiscalité des particuliers</a></li>
+            <li><a href="fiscalite-entreprises.html">Fiscalité des entreprises</a></li>
+            <li><a href="droit-des-affaires.html">Droit des affaires</a></li>
+            <li><a href="international.html">Clients internationaux</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-white font-semibold text-sm mb-4">Le Cabinet</h5>
+          <ul class="space-y-2 text-sm">
+            <li><a href="le-cabinet.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t pt-8" style="border-color: rgba(255,255,255,0.1);">
+        <p class="text-xs text-center" style="color: rgba(255,255,255,0.35);">© 2026 Cabinet AQ Lawyer — Tous droits réservés · Avocat au Barreau des Hauts-de-Seine</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

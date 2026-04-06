@@ -1,0 +1,317 @@
+/* =============================================
+   Cabinet AQ Lawyer — Feuille de style partagée
+   ============================================= */
+
+:root {
+  --navy: #1B2B5E;
+  --navy-dark: #111D42;
+  --navy-light: #243570;
+  --gold: #C9A84C;
+  --gold-light: #DFC278;
+  --cream: #F8F7F4;
+  --cream-dark: #EEECE7;
+  --text: #1C1C1C;
+  --text-muted: #6B6B6B;
+  --white: #FFFFFF;
+}
+
+/* Typographie */
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--text);
+  background-color: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Navigation */
+.nav-link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.25rem 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  border-bottom-color: var(--gold);
+  color: var(--gold-light);
+}
+
+/* Boutons */
+.btn-primary {
+  display: inline-block;
+  background-color: var(--gold);
+  color: var(--navy-dark);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.875rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.1s;
+  letter-spacing: 0.02em;
+}
+
+.btn-primary:hover {
+  background-color: var(--gold-light);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.875rem 2rem;
+  border-radius: 4px;
+  border: 2px solid rgba(255,255,255,0.6);
+  text-decoration: none;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  border-color: var(--white);
+  background-color: rgba(255,255,255,0.1);
+}
+
+.btn-outline-gold {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--gold);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: 4px;
+  border: 2px solid var(--gold);
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-outline-gold:hover {
+  background-color: var(--gold);
+  color: var(--navy-dark);
+}
+
+/* Cartes Entrée (homepage) */
+.entrance-card {
+  background: var(--white);
+  border: 1px solid var(--cream-dark);
+  border-radius: 8px;
+  padding: 2rem;
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+  text-decoration: none;
+  display: block;
+}
+
+.entrance-card:hover {
+  box-shadow: 0 8px 32px rgba(27, 43, 94, 0.12);
+  transform: translateY(-3px);
+  border-color: var(--gold);
+}
+
+.entrance-card .card-icon {
+  width: 56px;
+  height: 56px;
+  background: var(--cream);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+}
+
+.entrance-card:hover .card-icon {
+  background: var(--gold);
+}
+
+/* Section séparateur doré */
+.gold-line {
+  width: 48px;
+  height: 3px;
+  background: var(--gold);
+  margin-bottom: 1.5rem;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 60%, var(--navy-light) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(201, 168, 76, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Étapes process */
+.step-number {
+  width: 40px;
+  height: 40px;
+  background: var(--gold);
+  color: var(--navy-dark);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+/* Badge disponibilité */
+.badge-availability {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(201, 168, 76, 0.12);
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  color: var(--gold-light);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.35rem 0.875rem;
+  border-radius: 999px;
+  margin-bottom: 1.5rem;
+}
+
+.badge-dot {
+  width: 7px;
+  height: 7px;
+  background: #4ADE80;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+/* Pricing card */
+.pricing-card {
+  background: var(--navy-dark);
+  color: var(--white);
+  border-radius: 12px;
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(201, 168, 76, 0.1) 0%, transparent 70%);
+}
+
+/* Footer */
+footer {
+  background: var(--navy-dark);
+  color: rgba(255,255,255,0.7);
+}
+
+footer a {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: var(--gold);
+}
+
+/* Formulaire */
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 0.375rem;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  color: var(--text);
+  background: var(--white);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  border-color: var(--navy);
+  box-shadow: 0 0 0 3px rgba(27, 43, 94, 0.08);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu.open {
+  display: block;
+}
+
+/* Utilitaires */
+.section-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--cream-dark);
+  margin: 2rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .entrance-card {
+    padding: 1.5rem;
+  }
+
+  .pricing-card {
+    padding: 1.75rem;
+  }
+}

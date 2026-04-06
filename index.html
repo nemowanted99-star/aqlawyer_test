@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cabinet AQ Lawyer — Avocat fiscaliste au Barreau des Hauts-de-Seine. Contrôle fiscal, droit des sociétés, titres de séjour. Consultation en visioconférence partout en France. 150€ / 45 min.">
+  <title>Cabinet AQ Lawyer — Avocat Fiscaliste & Droit des Affaires</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav style="background-color: var(--navy-dark);" class="fixed w-full top-0 z-50 shadow-lg">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-3 text-white no-underline">
+          <div style="background-color: var(--gold);" class="w-8 h-8 rounded flex items-center justify-center font-bold text-sm" style="color: var(--navy-dark);">AQ</div>
+          <span class="font-semibold text-sm tracking-wide">Cabinet AQ Lawyer</span>
+        </a>
+
+        <!-- Desktop menu -->
+        <div class="hidden md:flex items-center gap-6">
+          <a href="index.html" class="nav-link active">Accueil</a>
+          <a href="le-cabinet.html" class="nav-link">Le Cabinet</a>
+          <a href="fiscalite-particuliers.html" class="nav-link">Fiscalité Particuliers</a>
+          <a href="fiscalite-entreprises.html" class="nav-link">Fiscalité Entreprises</a>
+          <a href="droit-des-affaires.html" class="nav-link">Droit des Affaires</a>
+          <a href="international.html" class="nav-link">International</a>
+          <a href="contact.html" class="btn-primary text-sm py-2 px-4 ml-2">Prendre rendez-vous</a>
+        </div>
+
+        <!-- Mobile burger -->
+        <button id="burger" class="md:hidden text-white p-2" onclick="toggleMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobileMenu" class="mobile-menu md:hidden pb-4 border-t border-white border-opacity-10 mt-1">
+        <div class="flex flex-col gap-3 pt-4">
+          <a href="index.html" class="nav-link text-sm">Accueil</a>
+          <a href="le-cabinet.html" class="nav-link text-sm">Le Cabinet</a>
+          <a href="fiscalite-particuliers.html" class="nav-link text-sm">Fiscalité Particuliers</a>
+          <a href="fiscalite-entreprises.html" class="nav-link text-sm">Fiscalité Entreprises</a>
+          <a href="droit-des-affaires.html" class="nav-link text-sm">Droit des Affaires</a>
+          <a href="international.html" class="nav-link text-sm">International</a>
+          <a href="contact.html" class="btn-primary text-sm py-2 px-4 inline-block mt-2 text-center">Prendre rendez-vous</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero pt-32 pb-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl">
+        <div class="badge-availability">
+          <span class="badge-dot"></span>
+          Disponible — Réponse sous 48h ouvrées
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-6" style="font-family: 'Playfair Display', serif;">
+          Un avocat fiscaliste<br>
+          <span style="color: var(--gold);">à vos côtés,</span><br>
+          partout en France
+        </h1>
+        <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+          Contrôle fiscal, droit des sociétés, titres de séjour — le Cabinet AQ Lawyer vous accompagne en visioconférence, sans déplacement, avec la rigueur d'un cabinet spécialisé.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="contact.html" class="btn-primary text-center">Première consultation — 150€ / 45 min</a>
+          <a href="le-cabinet.html" class="btn-secondary text-center">Découvrir le cabinet</a>
+        </div>
+        <p class="text-sm text-gray-400 mt-4">
+          ✓ 100% visioconférence &nbsp;·&nbsp; ✓ Avocat au Barreau des Hauts-de-Seine &nbsp;·&nbsp; ✓ Devis sur mesure
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRIPLE ENTRANCE -->
+  <section style="background-color: var(--cream);" class="py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="section-tag">Votre situation</span>
+        <h2 class="text-3xl font-bold" style="font-family: 'Playfair Display', serif; color: var(--navy);">
+          Quel est votre besoin ?
+        </h2>
+        <p class="text-gray-500 mt-3 max-w-xl mx-auto">Choisissez votre profil pour accéder directement aux informations qui vous concernent.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Carte 1 : Particuliers -->
+        <a href="fiscalite-particuliers.html" class="entrance-card">
+          <div class="card-icon">⚖️</div>
+          <h3 class="text-lg font-bold mb-2" style="color: var(--navy); font-family: 'Playfair Display', serif;">
+            Particulier face au fisc
+          </h3>
+          <p class="text-sm text-gray-500 leading-relaxed mb-4">
+            Vous avez reçu un contrôle fiscal, un redressement, une mise en demeure — ou vous souhaitez anticiper un risque.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-1 mb-5">
+            <li>→ Contrôle fiscal & redressement</li>
+            <li>→ Déclaration de revenus complexe</li>
+            <li>→ Impôt sur la fortune immobilière</li>
+            <li>→ Plus-values immobilières</li>
+          </ul>
+          <span class="text-sm font-semibold" style="color: var(--gold);">Je veux être défendu →</span>
+        </a>
+
+        <!-- Carte 2 : Entreprises -->
+        <a href="fiscalite-entreprises.html" class="entrance-card">
+          <div class="card-icon">🏢</div>
+          <h3 class="text-lg font-bold mb-2" style="color: var(--navy); font-family: 'Playfair Display', serif;">
+            Entreprise & droit des sociétés
+          </h3>
+          <p class="text-sm text-gray-500 leading-relaxed mb-4">
+            Votre entreprise fait face à un contrôle, une restructuration, une cession ou un litige fiscal et commercial.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-1 mb-5">
+            <li>→ Fiscalité des sociétés (IS, TVA)</li>
+            <li>→ Création & structuration de sociétés</li>
+            <li>→ Cession de titres & transmission</li>
+            <li>→ Contrats commerciaux</li>
+          </ul>
+          <span class="text-sm font-semibold" style="color: var(--gold);">Consulter pour mon entreprise →</span>
+        </a>
+
+        <!-- Carte 3 : International -->
+        <a href="international.html" class="entrance-card">
+          <div class="card-icon">🌍</div>
+          <h3 class="text-lg font-bold mb-2" style="color: var(--navy); font-family: 'Playfair Display', serif;">
+            Clients internationaux
+          </h3>
+          <p class="text-sm text-gray-500 leading-relaxed mb-4">
+            Vous résidez à l'étranger ou êtes ressortissant étranger en France et avez besoin d'un accompagnement juridique.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-1 mb-5">
+            <li>→ Titre de séjour & régularisation</li>
+            <li>→ Fiscalité des non-résidents</li>
+            <li>→ Résidence fiscale internationale</li>
+            <li>→ Conseil en anglais disponible</li>
+          </ul>
+          <span class="text-sm font-semibold" style="color: var(--gold);">Obtenir de l'aide →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMENT ÇA MARCHE -->
+  <section class="py-16 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="section-tag">Simple & rapide</span>
+        <h2 class="text-3xl font-bold" style="font-family: 'Playfair Display', serif; color: var(--navy);">
+          Comment se déroule une consultation ?
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="step-number mx-auto mb-4">1</div>
+          <h4 class="font-semibold mb-2" style="color: var(--navy);">Vous nous contactez</h4>
+          <p class="text-sm text-gray-500">Décrivez votre situation via le formulaire de contact. Réponse sous 48h ouvrées.</p>
+        </div>
+        <div class="text-center">
+          <div class="step-number mx-auto mb-4">2</div>
+          <h4 class="font-semibold mb-2" style="color: var(--navy);">On fixe un rendez-vous</h4>
+          <p class="text-sm text-gray-500">Nous convenons d'un créneau en visioconférence, soir ou week-end selon vos disponibilités.</p>
+        </div>
+        <div class="text-center">
+          <div class="step-number mx-auto mb-4">3</div>
+          <h4 class="font-semibold mb-2" style="color: var(--navy);">Consultation de 45 min</h4>
+          <p class="text-sm text-gray-500">150€ — Analyse de votre dossier, stratégie, réponses à vos questions. Sans engagement.</p>
+        </div>
+        <div class="text-center">
+          <div class="step-number mx-auto mb-4">4</div>
+          <h4 class="font-semibold mb-2" style="color: var(--navy);">Devis & accompagnement</h4>
+          <p class="text-sm text-gray-500">Si vous souhaitez aller plus loin, nous vous adressons un devis sur mesure selon votre dossier.</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="contact.html" class="btn-primary">Prendre rendez-vous →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- À PROPOS (teaser) -->
+  <section style="background-color: var(--cream);" class="py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="section-tag">Le Cabinet</span>
+          <h2 class="text-3xl font-bold mb-4" style="font-family: 'Playfair Display', serif; color: var(--navy);">
+            L'expertise d'un avocat corporate,<br>au service de votre dossier
+          </h2>
+          <div class="gold-line"></div>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Le Cabinet AQ Lawyer est inscrit au Barreau des Hauts-de-Seine. Formé au sein de structures de premier plan, notre avocat associe la rigueur des grands cabinets à la disponibilité et au suivi personnalisé d'une structure à taille humaine.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Parce que chaque dossier fiscal ou juridique est unique, nous privilégions une approche sur mesure — et des consultations sans jargon, où vous comprenez vraiment ce qui se passe.
+          </p>
+          <a href="le-cabinet.html" class="btn-outline-gold">En savoir plus sur le cabinet</a>
+        </div>
+
+        <div class="space-y-4">
+          <div class="bg-white rounded-lg p-5 border" style="border-color: var(--cream-dark);">
+            <div class="flex items-start gap-4">
+              <span class="text-2xl">🎓</span>
+              <div>
+                <h4 class="font-semibold mb-1" style="color: var(--navy);">Formation d'excellence</h4>
+                <p class="text-sm text-gray-500">Expérience acquise au sein de cabinets corporate de référence en droit fiscal et des affaires.</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-5 border" style="border-color: var(--cream-dark);">
+            <div class="flex items-start gap-4">
+              <span class="text-2xl">💻</span>
+              <div>
+                <h4 class="font-semibold mb-1" style="color: var(--navy);">100% visioconférence</h4>
+                <p class="text-sm text-gray-500">Vous êtes accompagné où que vous soyez en France, sans contrainte de déplacement.</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-5 border" style="border-color: var(--cream-dark);">
+            <div class="flex items-start gap-4">
+              <span class="text-2xl">📋</span>
+              <div>
+                <h4 class="font-semibold mb-1" style="color: var(--navy);">Tarifs transparents</h4>
+                <p class="text-sm text-gray-500">Première consultation à tarif fixe (150€). Suite du dossier sur devis, sans surprise.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TARIFICATION -->
+  <section class="py-16 px-6 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <span class="section-tag">Tarifs</span>
+      <h2 class="text-3xl font-bold mb-4" style="font-family: 'Playfair Display', serif; color: var(--navy);">
+        Une première consultation sans engagement
+      </h2>
+      <p class="text-gray-500 mb-10 max-w-xl mx-auto">Pour que vous puissiez évaluer notre accompagnement avant de vous engager.</p>
+
+      <div class="grid md:grid-cols-2 gap-6 text-left">
+
+        <!-- Consultation initiale -->
+        <div class="pricing-card">
+          <div class="text-xs font-semibold tracking-widest uppercase mb-4" style="color: var(--gold);">Première consultation</div>
+          <div class="text-4xl font-bold text-white mb-1">150€</div>
+          <div class="text-sm mb-6" style="color: rgba(255,255,255,0.5);">Forfait fixe · 45 minutes · En visioconférence</div>
+          <ul class="space-y-3 text-sm mb-8" style="color: rgba(255,255,255,0.8);">
+            <li class="flex items-start gap-2"><span style="color: var(--gold);">✓</span> Analyse de votre situation</li>
+            <li class="flex items-start gap-2"><span style="color: var(--gold);">✓</span> Réponse à vos questions</li>
+            <li class="flex items-start gap-2"><span style="color: var(--gold);">✓</span> Stratégie et options possibles</li>
+            <li class="flex items-start gap-2"><span style="color: var(--gold);">✓</span> Sans engagement pour la suite</li>
+          </ul>
+          <a href="contact.html" class="btn-primary block text-center">Prendre rendez-vous</a>
+        </div>
+
+        <!-- Mission complète -->
+        <div class="border-2 rounded-xl p-8" style="border-color: var(--cream-dark);">
+          <div class="text-xs font-semibold tracking-widest uppercase mb-4" style="color: var(--navy);">Mission complète</div>
+          <div class="text-4xl font-bold mb-1" style="color: var(--navy);">Sur devis</div>
+          <div class="text-sm mb-6 text-gray-400">Adapté à la complexité de votre dossier</div>
+          <ul class="space-y-3 text-sm text-gray-600 mb-8">
+            <li class="flex items-start gap-2"><span style="color: var(--gold);">✓</span> Rédaction de mémoires et recours</li>
+            <li class="flex items-start gap-2"><span style="color: var(--gold);">✓</span> Représentation devant l'administration</li>
+            <li class="flex items-start gap-2"><span style="color: var(--gold);">✓</span> Accompagnement judiciaire complet</li>
+            <li class="flex items-start gap-2"><span style="color: var(--gold);">✓</span> Devis transparent avant engagement</li>
+          </ul>
+          <a href="contact.html" class="btn-outline-gold block text-center">Demander un devis</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section style="background-color: var(--navy);" class="py-14 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-white mb-4" style="font-family: 'Playfair Display', serif;">
+        Votre situation mérite une analyse sérieuse
+      </h2>
+      <p class="text-gray-300 mb-8">
+        Ne laissez pas un délai fiscal passer sans avoir consulté. Prenez rendez-vous en quelques minutes.
+      </p>
+      <a href="contact.html" class="btn-primary text-base">Prendre rendez-vous maintenant →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-12 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-4 gap-8 mb-10">
+
+        <!-- Colonne 1 : Cabinet -->
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <div style="background-color: var(--gold);" class="w-8 h-8 rounded flex items-center justify-center font-bold text-sm text-white">AQ</div>
+            <span class="font-semibold text-white">Cabinet AQ Lawyer</span>
+          </div>
+          <p class="text-sm leading-relaxed mb-4" style="color: rgba(255,255,255,0.55);">
+            Avocat au Barreau des Hauts-de-Seine — Spécialiste en droit fiscal et droit des affaires.<br>
+            Consultations 100% en visioconférence, partout en France.
+          </p>
+          <p class="text-xs" style="color: rgba(255,255,255,0.35);">Réponse sous 48h ouvrées</p>
+        </div>
+
+        <!-- Colonne 2 : Domaines -->
+        <div>
+          <h5 class="text-white font-semibold text-sm mb-4">Domaines d'intervention</h5>
+          <ul class="space-y-2 text-sm">
+            <li><a href="fiscalite-particuliers.html">Fiscalité des particuliers</a></li>
+            <li><a href="fiscalite-entreprises.html">Fiscalité des entreprises</a></li>
+            <li><a href="droit-des-affaires.html">Droit des affaires</a></li>
+            <li><a href="international.html">Clients internationaux</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 3 : Cabinet -->
+        <div>
+          <h5 class="text-white font-semibold text-sm mb-4">Le Cabinet</h5>
+          <ul class="space-y-2 text-sm">
+            <li><a href="le-cabinet.html">À propos</a></li>
+            <li><a href="contact.html">Prendre rendez-vous</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="border-t pt-8" style="border-color: rgba(255,255,255,0.1);">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs" style="color: rgba(255,255,255,0.35);">
+          <p>© 2026 Cabinet AQ Lawyer — Tous droits réservés</p>
+          <p>Avocat au Barreau des Hauts-de-Seine · N° RPVA : [à compléter]</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>

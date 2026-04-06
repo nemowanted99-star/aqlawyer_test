@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cabinet AQ Lawyer — Avocat au Barreau des Hauts-de-Seine, spécialiste en droit fiscal et droit des affaires. Consultations en visioconférence partout en France.">
+  <title>Le Cabinet — Cabinet AQ Lawyer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav style="background-color: var(--navy-dark);" class="fixed w-full top-0 z-50 shadow-lg">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3 text-white no-underline">
+          <div style="background-color: var(--gold); color: var(--navy-dark);" class="w-8 h-8 rounded flex items-center justify-center font-bold text-sm">AQ</div>
+          <span class="font-semibold text-sm tracking-wide">Cabinet AQ Lawyer</span>
+        </a>
+        <div class="hidden md:flex items-center gap-6">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <a href="le-cabinet.html" class="nav-link active">Le Cabinet</a>
+          <a href="fiscalite-particuliers.html" class="nav-link">Fiscalité Particuliers</a>
+          <a href="fiscalite-entreprises.html" class="nav-link">Fiscalité Entreprises</a>
+          <a href="droit-des-affaires.html" class="nav-link">Droit des Affaires</a>
+          <a href="international.html" class="nav-link">International</a>
+          <a href="contact.html" class="btn-primary text-sm py-2 px-4 ml-2">Prendre rendez-vous</a>
+        </div>
+        <button class="md:hidden text-white p-2" onclick="toggleMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+      <div id="mobileMenu" class="mobile-menu md:hidden pb-4 border-t border-white border-opacity-10 mt-1">
+        <div class="flex flex-col gap-3 pt-4">
+          <a href="index.html" class="nav-link text-sm">Accueil</a>
+          <a href="le-cabinet.html" class="nav-link text-sm active">Le Cabinet</a>
+          <a href="fiscalite-particuliers.html" class="nav-link text-sm">Fiscalité Particuliers</a>
+          <a href="fiscalite-entreprises.html" class="nav-link text-sm">Fiscalité Entreprises</a>
+          <a href="droit-des-affaires.html" class="nav-link text-sm">Droit des Affaires</a>
+          <a href="international.html" class="nav-link text-sm">International</a>
+          <a href="contact.html" class="btn-primary text-sm py-2 px-4 inline-block mt-2 text-center">Prendre rendez-vous</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero pt-28 pb-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl">
+        <span class="section-tag">Le Cabinet</span>
+        <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-5" style="font-family: 'Playfair Display', serif;">
+          Cabinet AQ Lawyer —<br>
+          <span style="color: var(--gold);">Rigueur et proximité</span>
+        </h1>
+        <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+          Avocat au Barreau des Hauts-de-Seine, le Cabinet AQ Lawyer accompagne particuliers et entreprises en droit fiscal et en droit des affaires — avec l'exigence des grands cabinets et la disponibilité d'une structure à taille humaine.
+        </p>
+        <a href="contact.html" class="btn-primary">Prendre rendez-vous</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRÉSENTATION -->
+  <section style="background-color: var(--cream);" class="py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+
+        <div>
+          <span class="section-tag">Notre identité</span>
+          <h2 class="text-3xl font-bold mb-4" style="font-family: 'Playfair Display', serif; color: var(--navy);">
+            Un cabinet construit sur l'exigence
+          </h2>
+          <div class="gold-line"></div>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Le Cabinet AQ Lawyer est fondé sur une conviction simple : chaque client mérite le niveau d'expertise que les grandes structures réservent habituellement aux dossiers les plus importants.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            Formé au sein de cabinets corporate de référence, notre avocat a développé une maîtrise approfondie du droit fiscal des entreprises et des particuliers, ainsi qu'une solide culture du droit des affaires — des domaines qui se recoupent constamment dans la pratique.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            En choisissant Cabinet AQ Lawyer, vous bénéficiez d'une approche globale et cohérente de votre situation, sans cloisonnement artificiel entre les dimensions fiscales et juridiques de votre dossier.
+          </p>
+        </div>
+
+        <div class="space-y-5">
+          <div class="bg-white rounded-lg p-5 border" style="border-color: var(--cream-dark);">
+            <div class="flex items-start gap-4">
+              <span class="text-2xl">⚖️</span>
+              <div>
+                <h4 class="font-semibold mb-1" style="color: var(--navy);">Avocat au Barreau des Hauts-de-Seine</h4>
+                <p class="text-sm text-gray-500">Inscrit au Barreau des Hauts-de-Seine, soumis aux règles déontologiques de la profession. Secret professionnel garanti.</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-5 border" style="border-color: var(--cream-dark);">
+            <div class="flex items-start gap-4">
+              <span class="text-2xl">🎓</span>
+              <div>
+                <h4 class="font-semibold mb-1" style="color: var(--navy);">Expertise corporate</h4>
+                <p class="text-sm text-gray-500">Expérience acquise au sein de cabinets spécialisés en droit fiscal et droit des affaires. Une rigueur d'analyse appliquée à chaque dossier.</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-5 border" style="border-color: var(--cream-dark);">
+            <div class="flex items-start gap-4">
+              <span class="text-2xl">🌍</span>
+              <div>
+                <h4 class="font-semibold mb-1" style="color: var(--navy);">Dimension internationale</h4>
+                <p class="text-sm text-gray-500">Maîtrise des conventions fiscales bilatérales et des problématiques transfrontalières. Consultations disponibles en anglais.</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-5 border" style="border-color: var(--cream-dark);">
+            <div class="flex items-start gap-4">
+              <span class="text-2xl">💻</span>
+              <div>
+                <h4 class="font-semibold mb-1" style="color: var(--navy);">100% visioconférence</h4>
+                <p class="text-sm text-gray-500">Vous consultez depuis chez vous, depuis votre bureau, depuis n'importe où en France. Pas de contrainte géographique, pas de déplacement.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTRE APPROCHE -->
+  <section class="py-16 px-6 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="section-tag">Notre approche</span>
+        <h2 class="text-3xl font-bold" style="font-family: 'Playfair Display', serif; color: var(--navy);">
+          Ce qui nous distingue
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-lg" style="background: var(--cream);">🎯</div>
+          <div>
+            <h4 class="font-semibold mb-2" style="color: var(--navy);">Double regard fiscal & juridique</h4>
+            <p class="text-sm text-gray-500 leading-relaxed">Chaque dossier est analysé simultanément sous l'angle fiscal et juridique — une approche globale que peu de cabinets offrent à ce niveau de spécialisation.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-lg" style="background: var(--cream);">💬</div>
+          <div>
+            <h4 class="font-semibold mb-2" style="color: var(--navy);">Clarté & transparence</h4>
+            <p class="text-sm text-gray-500 leading-relaxed">Nous vous expliquons votre situation en termes accessibles. Vous comprenez vos options, les risques et les enjeux — avant de prendre toute décision.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-lg" style="background: var(--cream);">⚡</div>
+          <div>
+            <h4 class="font-semibold mb-2" style="color: var(--navy);">Réactivité réelle</h4>
+            <p class="text-sm text-gray-500 leading-relaxed">Réponse sous 48h ouvrées. Consultations disponibles en soirée et le week-end pour s'adapter à votre agenda, pas l'inverse.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-lg" style="background: var(--cream);">📋</div>
+          <div>
+            <h4 class="font-semibold mb-2" style="color: var(--navy);">Tarification transparente</h4>
+            <p class="text-sm text-gray-500 leading-relaxed">Première consultation à tarif fixe (150€). Devis détaillé avant toute mission. Pas de surprise sur la facture finale.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOMAINES -->
+  <section style="background-color: var(--cream);" class="py-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <span class="section-tag">Nos domaines</span>
+      <h2 class="text-3xl font-bold mb-10" style="font-family: 'Playfair Display', serif; color: var(--navy);">
+        Quatre domaines d'intervention
+      </h2>
+      <div class="grid md:grid-cols-2 gap-4 text-left">
+        <a href="fiscalite-particuliers.html" class="entrance-card">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl">⚖️</span>
+            <div>
+              <h4 class="font-semibold" style="color: var(--navy);">Fiscalité des particuliers</h4>
+              <p class="text-sm text-gray-500">Contrôle fiscal, IFI, plus-values, déclarations complexes</p>
+            </div>
+          </div>
+        </a>
+        <a href="fiscalite-entreprises.html" class="entrance-card">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl">🏢</span>
+            <div>
+              <h4 class="font-semibold" style="color: var(--navy);">Fiscalité des entreprises</h4>
+              <p class="text-sm text-gray-500">IS, TVA, contrôle fiscal, restructuration</p>
+            </div>
+          </div>
+        </a>
+        <a href="droit-des-affaires.html" class="entrance-card">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl">💼</span>
+            <div>
+              <h4 class="font-semibold" style="color: var(--navy);">Droit des affaires</h4>
+              <p class="text-sm text-gray-500">Création de sociétés, cessions, contrats, contentieux</p>
+            </div>
+          </div>
+        </a>
+        <a href="international.html" class="entrance-card">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl">🌍</span>
+            <div>
+              <h4 class="font-semibold" style="color: var(--navy);">Clients internationaux</h4>
+              <p class="text-sm text-gray-500">Titres de séjour, non-résidents, double imposition</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background-color: var(--navy);" class="py-14 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-white mb-4" style="font-family: 'Playfair Display', serif;">
+        Discutons de votre situation
+      </h2>
+      <p class="text-gray-300 mb-8">Première consultation à 150€ · 45 minutes · En visioconférence · Sans engagement</p>
+      <a href="contact.html" class="btn-primary text-base">Prendre rendez-vous →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-12 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-4 gap-8 mb-10">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <div style="background-color: var(--gold);" class="w-8 h-8 rounded flex items-center justify-center font-bold text-sm text-white">AQ</div>
+            <span class="font-semibold text-white">Cabinet AQ Lawyer</span>
+          </div>
+          <p class="text-sm leading-relaxed mb-4" style="color: rgba(255,255,255,0.55);">Avocat au Barreau des Hauts-de-Seine — Spécialiste en droit fiscal et droit des affaires.<br>Consultations 100% en visioconférence, partout en France.</p>
+        </div>
+        <div>
+          <h5 class="text-white font-semibold text-sm mb-4">Domaines</h5>
+          <ul class="space-y-2 text-sm">
+            <li><a href="fiscalite-particuliers.html">Fiscalité des particuliers</a></li>
+            <li><a href="fiscalite-entreprises.html">Fiscalité des entreprises</a></li>
+            <li><a href="droit-des-affaires.html">Droit des affaires</a></li>
+            <li><a href="international.html">Clients internationaux</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-white font-semibold text-sm mb-4">Le Cabinet</h5>
+          <ul class="space-y-2 text-sm">
+            <li><a href="le-cabinet.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t pt-8" style="border-color: rgba(255,255,255,0.1);">
+        <p class="text-xs text-center" style="color: rgba(255,255,255,0.35);">© 2026 Cabinet AQ Lawyer — Tous droits réservés · Avocat au Barreau des Hauts-de-Seine</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
