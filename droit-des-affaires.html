@@ -8,218 +8,167 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav style="background-color: var(--navy-dark);" class="fixed w-full top-0 z-50 shadow-lg">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="flex items-center justify-between h-16">
-        <a href="index.html" class="flex items-center gap-3 text-white no-underline">
-          <div style="background-color: var(--gold); color: var(--navy-dark);" class="w-8 h-8 rounded flex items-center justify-center font-bold text-sm">AQ</div>
-          <span class="font-semibold text-sm tracking-wide">Cabinet AQ Lawyer</span>
-        </a>
-        <div class="hidden md:flex items-center gap-6">
-          <a href="index.html" class="nav-link">Accueil</a>
-          <a href="le-cabinet.html" class="nav-link">Le Cabinet</a>
-          <a href="fiscalite-particuliers.html" class="nav-link">Fiscalité Particuliers</a>
-          <a href="fiscalite-entreprises.html" class="nav-link">Fiscalité Entreprises</a>
-          <a href="droit-des-affaires.html" class="nav-link active">Droit des Affaires</a>
-          <a href="international.html" class="nav-link">International</a>
-          <a href="contact.html" class="btn-primary text-sm py-2 px-4 ml-2">Prendre rendez-vous</a>
-        </div>
-        <button class="md:hidden text-white p-2" onclick="toggleMenu()">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
+  <nav class="navbar">
+    <div class="inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-badge">AQ</div>
+        <span class="nav-logo-text">Cabinet AQ Lawyer</span>
+      </a>
+      <div class="nav-links">
+        <a href="le-cabinet.html" class="nav-link">Le Cabinet</a>
+        <a href="fiscalite-particuliers.html" class="nav-link">Fiscalité Particuliers</a>
+        <a href="fiscalite-entreprises.html" class="nav-link">Fiscalité Entreprises</a>
+        <a href="droit-des-affaires.html" class="nav-link active">Droit des Affaires</a>
+        <a href="international.html" class="nav-link">International</a>
+        <a href="contact.html" class="nav-cta">Prendre rendez-vous</a>
       </div>
-      <div id="mobileMenu" class="mobile-menu md:hidden pb-4 border-t border-white border-opacity-10 mt-1">
-        <div class="flex flex-col gap-3 pt-4">
-          <a href="index.html" class="nav-link text-sm">Accueil</a>
-          <a href="le-cabinet.html" class="nav-link text-sm">Le Cabinet</a>
-          <a href="fiscalite-particuliers.html" class="nav-link text-sm">Fiscalité Particuliers</a>
-          <a href="fiscalite-entreprises.html" class="nav-link text-sm">Fiscalité Entreprises</a>
-          <a href="droit-des-affaires.html" class="nav-link text-sm active">Droit des Affaires</a>
-          <a href="international.html" class="nav-link text-sm">International</a>
-          <a href="contact.html" class="btn-primary text-sm py-2 px-4 inline-block mt-2 text-center">Prendre rendez-vous</a>
-        </div>
-      </div>
+      <button class="nav-hamburger" onclick="toggleNav()">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
     </div>
   </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="le-cabinet.html">Le Cabinet</a>
+    <a href="fiscalite-particuliers.html">Fiscalité Particuliers</a>
+    <a href="fiscalite-entreprises.html">Fiscalité Entreprises</a>
+    <a href="droit-des-affaires.html" style="color:var(--blue);">Droit des Affaires</a>
+    <a href="international.html">International</a>
+    <a href="contact.html" style="color:var(--blue); font-weight:600;">Prendre rendez-vous →</a>
+  </div>
 
-  <!-- HERO -->
-  <section class="hero pt-28 pb-16 px-6">
-    <div class="max-w-6xl mx-auto">
-      <div class="max-w-2xl">
-        <span class="section-tag">Droit des Affaires</span>
-        <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-5" style="font-family: 'Playfair Display', serif;">
-          Sécurisez vos opérations<br>
-          <span style="color: var(--gold);">juridiques et commerciales</span>
+  <section class="page-hero" style="padding:6rem 2rem 4rem;">
+    <div class="container">
+      <div style="max-width:680px;">
+        <div style="margin-bottom:1.5rem;">
+          <a href="index.html" style="font-size:0.78rem; color:rgba(255,255,255,0.4);">Accueil</a>
+          <span style="color:rgba(255,255,255,0.2); margin:0 0.5rem;">/</span>
+          <span style="font-size:0.78rem; color:var(--blue);">Droit des Affaires</span>
+        </div>
+        <span class="label">Droit des Affaires</span>
+        <h1 class="chivo" style="font-size:clamp(2rem, 4.5vw, 3.25rem); font-weight:900; color:var(--white); line-height:1.1; margin-bottom:1.25rem;">
+          Sécurisez vos opérations<br><span style="color:var(--blue);">juridiques et commerciales</span>
         </h1>
-        <p class="text-lg text-gray-300 mb-8 leading-relaxed">
-          Création de sociétés, cession de titres, contrats commerciaux, litiges entre associés — le Cabinet AQ Lawyer vous accompagne sur toutes les dimensions juridiques de votre activité.
+        <p style="font-size:1.05rem; color:rgba(255,255,255,0.7); line-height:1.7; margin-bottom:2rem; max-width:540px;">
+          Création de sociétés, cession de titres, contrats, litiges entre associés — le Cabinet AQ Lawyer vous accompagne sur toutes les dimensions juridiques de votre activité.
         </p>
-        <a href="contact.html" class="btn-primary">Prendre rendez-vous — 150€ / 45 min</a>
-        <p class="text-sm text-gray-400 mt-4">✓ 100% visioconférence &nbsp;·&nbsp; ✓ Expertise corporate &nbsp;·&nbsp; ✓ Devis sur mesure</p>
+        <a href="contact.html" class="btn btn-primary">Prendre rendez-vous — 150€ / 45 min</a>
       </div>
     </div>
   </section>
 
-  <!-- DOMAINES -->
-  <section style="background-color: var(--cream);" class="py-16 px-6">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-12">
-        <span class="section-tag">Interventions</span>
-        <h2 class="text-3xl font-bold" style="font-family: 'Playfair Display', serif; color: var(--navy);">
-          Droit des affaires — nos domaines
-        </h2>
+  <section class="section" style="background:var(--off-white);">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:3rem;">
+        <span class="label">Interventions</span>
+        <h2 class="chivo" style="font-size:clamp(1.75rem, 3vw, 2.25rem); color:var(--green-darker);">Droit des affaires — nos domaines</h2>
       </div>
-
-      <div class="grid md:grid-cols-2 gap-6">
-
-        <div class="bg-white rounded-lg p-6 border" style="border-color: var(--cream-dark);">
-          <div class="flex items-start gap-4">
-            <span class="text-2xl mt-1">🏗️</span>
-            <div>
-              <h3 class="font-bold mb-2" style="color: var(--navy); font-family: 'Playfair Display', serif;">Création & structuration de sociétés</h3>
-              <p class="text-sm text-gray-600 leading-relaxed">Choix de la forme juridique (SAS, SARL, SA, SCI…), rédaction des statuts, pacte d'associés, structuration holding. On vous aide à démarrer sur les bonnes bases.</p>
-            </div>
-          </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1.25rem;">
+        <div class="card">
+          <div style="font-size:1.75rem; margin-bottom:1rem;">🏗️</div>
+          <h3 class="chivo" style="color:var(--green-darker); font-size:1rem; margin-bottom:0.5rem;">Création & structuration de sociétés</h3>
+          <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.65;">Choix de la forme juridique (SAS, SARL, SA, SCI…), rédaction des statuts, pacte d'associés, structuration holding.</p>
         </div>
-
-        <div class="bg-white rounded-lg p-6 border" style="border-color: var(--cream-dark);">
-          <div class="flex items-start gap-4">
-            <span class="text-2xl mt-1">🤝</span>
-            <div>
-              <h3 class="font-bold mb-2" style="color: var(--navy); font-family: 'Playfair Display', serif;">Cession de titres & transmission d'entreprise</h3>
-              <p class="text-sm text-gray-600 leading-relaxed">Audit juridique et fiscal préalable, rédaction des protocoles de cession, garanties d'actif et de passif, optimisation fiscale de la cession.</p>
-            </div>
-          </div>
+        <div class="card">
+          <div style="font-size:1.75rem; margin-bottom:1rem;">🤝</div>
+          <h3 class="chivo" style="color:var(--green-darker); font-size:1rem; margin-bottom:0.5rem;">Cession de titres & transmission</h3>
+          <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.65;">Audit juridique et fiscal préalable, protocoles de cession, garanties d'actif et de passif, optimisation fiscale de la cession.</p>
         </div>
-
-        <div class="bg-white rounded-lg p-6 border" style="border-color: var(--cream-dark);">
-          <div class="flex items-start gap-4">
-            <span class="text-2xl mt-1">📄</span>
-            <div>
-              <h3 class="font-bold mb-2" style="color: var(--navy); font-family: 'Playfair Display', serif;">Rédaction & négociation de contrats</h3>
-              <p class="text-sm text-gray-600 leading-relaxed">Contrats commerciaux, CGV, accords de confidentialité, contrats de prestation, partenariats. Nous sécurisons vos engagements contractuels avant la signature.</p>
-            </div>
-          </div>
+        <div class="card">
+          <div style="font-size:1.75rem; margin-bottom:1rem;">📄</div>
+          <h3 class="chivo" style="color:var(--green-darker); font-size:1rem; margin-bottom:0.5rem;">Rédaction & négociation de contrats</h3>
+          <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.65;">Contrats commerciaux, CGV, accords de confidentialité, partenariats. Sécurisation de vos engagements avant la signature.</p>
         </div>
-
-        <div class="bg-white rounded-lg p-6 border" style="border-color: var(--cream-dark);">
-          <div class="flex items-start gap-4">
-            <span class="text-2xl mt-1">⚔️</span>
-            <div>
-              <h3 class="font-bold mb-2" style="color: var(--navy); font-family: 'Playfair Display', serif;">Litiges entre associés</h3>
-              <p class="text-sm text-gray-600 leading-relaxed">Conflits de gouvernance, abus de majorité, exclusion d'associé, dissolution judiciaire. Nous vous représentons pour résoudre les conflits, à l'amiable ou devant les tribunaux.</p>
-            </div>
-          </div>
+        <div class="card">
+          <div style="font-size:1.75rem; margin-bottom:1rem;">⚔️</div>
+          <h3 class="chivo" style="color:var(--green-darker); font-size:1rem; margin-bottom:0.5rem;">Litiges entre associés</h3>
+          <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.65;">Conflits de gouvernance, abus de majorité, exclusion d'associé, dissolution judiciaire. Résolution à l'amiable ou devant les tribunaux.</p>
         </div>
-
-        <div class="bg-white rounded-lg p-6 border" style="border-color: var(--cream-dark);">
-          <div class="flex items-start gap-4">
-            <span class="text-2xl mt-1">🔄</span>
-            <div>
-              <h3 class="font-bold mb-2" style="color: var(--navy); font-family: 'Playfair Display', serif;">Restructurations & opérations sur le capital</h3>
-              <p class="text-sm text-gray-600 leading-relaxed">Fusion, scission, apport partiel d'actifs, augmentation de capital, rachat de titres. Accompagnement juridique et fiscal de bout en bout.</p>
-            </div>
-          </div>
+        <div class="card">
+          <div style="font-size:1.75rem; margin-bottom:1rem;">🔄</div>
+          <h3 class="chivo" style="color:var(--green-darker); font-size:1rem; margin-bottom:0.5rem;">Restructurations & opérations sur capital</h3>
+          <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.65;">Fusion, scission, apport partiel d'actifs, augmentation de capital — accompagnement juridique et fiscal de bout en bout.</p>
         </div>
-
-        <div class="bg-white rounded-lg p-6 border" style="border-color: var(--cream-dark);">
-          <div class="flex items-start gap-4">
-            <span class="text-2xl mt-1">🏛️</span>
-            <div>
-              <h3 class="font-bold mb-2" style="color: var(--navy); font-family: 'Playfair Display', serif;">Contentieux commercial</h3>
-              <p class="text-sm text-gray-600 leading-relaxed">Représentation devant le Tribunal de Commerce pour les litiges contractuels, impayés, rupture abusive de relations commerciales ou concurrence déloyale.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- VALEUR AJOUTÉE -->
-  <section class="py-16 px-6 bg-white">
-    <div class="max-w-4xl mx-auto">
-      <div class="text-center mb-12">
-        <span class="section-tag">Notre valeur ajoutée</span>
-        <h2 class="text-3xl font-bold" style="font-family: 'Playfair Display', serif; color: var(--navy);">
-          L'approche Cabinet AQ Lawyer
-        </h2>
-      </div>
-      <div class="grid md:grid-cols-3 gap-8 text-center">
-        <div>
-          <div class="text-3xl mb-4">🎯</div>
-          <h4 class="font-semibold mb-2" style="color: var(--navy);">Double expertise fiscal & corporate</h4>
-          <p class="text-sm text-gray-500">Nous traitons simultanément les dimensions juridiques et fiscales de chaque opération — une vision globale que tous les avocats n'offrent pas.</p>
-        </div>
-        <div>
-          <div class="text-3xl mb-4">⚡</div>
-          <h4 class="font-semibold mb-2" style="color: var(--navy);">Réactivité & disponibilité</h4>
-          <p class="text-sm text-gray-500">Consultations soir et week-end selon vos disponibilités. Réponse sous 48h ouvrées à chaque demande.</p>
-        </div>
-        <div>
-          <div class="text-3xl mb-4">💡</div>
-          <h4 class="font-semibold mb-2" style="color: var(--navy);">Clarté & pédagogie</h4>
-          <p class="text-sm text-gray-500">On vous explique les enjeux en termes clairs, sans jargon. Vous prenez vos décisions en comprenant vraiment ce qui est en jeu.</p>
+        <div class="card">
+          <div style="font-size:1.75rem; margin-bottom:1rem;">🏛️</div>
+          <h3 class="chivo" style="color:var(--green-darker); font-size:1rem; margin-bottom:0.5rem;">Contentieux commercial</h3>
+          <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.65;">Représentation devant le Tribunal de Commerce pour litiges contractuels, impayés, rupture abusive, concurrence déloyale.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section style="background-color: var(--navy);" class="py-14 px-6">
-    <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-white mb-4" style="font-family: 'Playfair Display', serif;">Une question sur une opération juridique ?</h2>
-      <p class="text-gray-300 mb-8">Décrivez votre situation — nous vous répondons sous 48h et convenons d'un créneau de consultation.</p>
-      <a href="contact.html" class="btn-primary text-base">Prendre rendez-vous →</a>
+  <section class="section" style="background:var(--white);">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:3rem;">
+        <span class="label">Notre valeur ajoutée</span>
+        <h2 class="chivo" style="font-size:clamp(1.75rem, 3vw, 2.25rem); color:var(--green-darker);">Ce qui nous distingue</h2>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:2rem; text-align:center;">
+        <div>
+          <div style="font-size:2.5rem; margin-bottom:1rem;">🎯</div>
+          <h4 class="chivo" style="color:var(--green-darker); margin-bottom:0.5rem;">Double expertise fiscal & corporate</h4>
+          <p style="font-size:0.83rem; color:var(--text-muted); line-height:1.6;">Chaque opération est analysée simultanément sous l'angle fiscal et juridique — une vision globale rare à ce niveau de spécialisation.</p>
+        </div>
+        <div>
+          <div style="font-size:2.5rem; margin-bottom:1rem;">⚡</div>
+          <h4 class="chivo" style="color:var(--green-darker); margin-bottom:0.5rem;">Réactivité & disponibilité</h4>
+          <p style="font-size:0.83rem; color:var(--text-muted); line-height:1.6;">Consultations soir et week-end selon vos disponibilités. Réponse sous 48h ouvrées à chaque demande.</p>
+        </div>
+        <div>
+          <div style="font-size:2.5rem; margin-bottom:1rem;">💡</div>
+          <h4 class="chivo" style="color:var(--green-darker); margin-bottom:0.5rem;">Clarté & pédagogie</h4>
+          <p style="font-size:0.83rem; color:var(--text-muted); line-height:1.6;">Explications en termes accessibles, sans jargon. Vous prenez vos décisions en comprenant vraiment ce qui est en jeu.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="py-12 px-6">
-    <div class="max-w-6xl mx-auto">
-      <div class="grid md:grid-cols-4 gap-8 mb-10">
-        <div class="md:col-span-2">
-          <div class="flex items-center gap-3 mb-4">
-            <div style="background-color: var(--gold);" class="w-8 h-8 rounded flex items-center justify-center font-bold text-sm text-white">AQ</div>
-            <span class="font-semibold text-white">Cabinet AQ Lawyer</span>
+  <section class="section" style="background:var(--green-dark);">
+    <div class="container-sm" style="text-align:center;">
+      <h2 class="chivo" style="font-size:clamp(1.75rem, 3vw, 2.25rem); color:var(--white); margin-bottom:1rem;">Une question sur une opération juridique ?</h2>
+      <p style="color:rgba(255,255,255,0.6); margin-bottom:2rem;">Décrivez votre situation — nous vous répondons sous 48h et convenons d'un créneau.</p>
+      <a href="contact.html" class="btn btn-primary">Prendre rendez-vous →</a>
+    </div>
+  </section>
+
+  <footer style="padding:3.5rem 2rem 2rem;">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:2fr 1fr 1fr; gap:3rem; margin-bottom:2.5rem;">
+        <div>
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
+            <div class="nav-logo-badge">AQ</div>
+            <span class="chivo" style="font-weight:700; color:var(--white); font-size:0.95rem;">Cabinet AQ Lawyer</span>
           </div>
-          <p class="text-sm leading-relaxed mb-4" style="color: rgba(255,255,255,0.55);">Avocat au Barreau des Hauts-de-Seine — Spécialiste en droit fiscal et droit des affaires.<br>Consultations 100% en visioconférence, partout en France.</p>
+          <p style="font-size:0.82rem; color:rgba(255,255,255,0.4); line-height:1.7;">Avocat au Barreau des Hauts-de-Seine · Droit fiscal & droit des affaires · Consultations en visioconférence partout en France.</p>
         </div>
         <div>
-          <h5 class="text-white font-semibold text-sm mb-4">Domaines</h5>
-          <ul class="space-y-2 text-sm">
-            <li><a href="fiscalite-particuliers.html">Fiscalité des particuliers</a></li>
-            <li><a href="fiscalite-entreprises.html">Fiscalité des entreprises</a></li>
-            <li><a href="droit-des-affaires.html">Droit des affaires</a></li>
-            <li><a href="international.html">Clients internationaux</a></li>
+          <h6 class="chivo" style="font-size:0.75rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:rgba(255,255,255,0.3); margin-bottom:1rem;">Domaines</h6>
+          <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem; font-size:0.82rem;">
+            <li><a href="fiscalite-particuliers.html">Fiscalité Particuliers</a></li>
+            <li><a href="fiscalite-entreprises.html">Fiscalité Entreprises</a></li>
+            <li><a href="droit-des-affaires.html">Droit des Affaires</a></li>
+            <li><a href="international.html">International</a></li>
           </ul>
         </div>
         <div>
-          <h5 class="text-white font-semibold text-sm mb-4">Le Cabinet</h5>
-          <ul class="space-y-2 text-sm">
+          <h6 class="chivo" style="font-size:0.75rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:rgba(255,255,255,0.3); margin-bottom:1rem;">Cabinet</h6>
+          <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem; font-size:0.82rem;">
             <li><a href="le-cabinet.html">À propos</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
-      <div class="border-t pt-8" style="border-color: rgba(255,255,255,0.1);">
-        <p class="text-xs text-center" style="color: rgba(255,255,255,0.35);">© 2026 Cabinet AQ Lawyer — Tous droits réservés · Avocat au Barreau des Hauts-de-Seine</p>
+      <div style="border-top:1px solid rgba(255,255,255,0.08); padding-top:1.5rem;">
+        <p style="font-size:0.74rem; color:rgba(255,255,255,0.2); text-align:center;">© 2026 Cabinet AQ Lawyer — Tous droits réservés · Avocat au Barreau des Hauts-de-Seine</p>
       </div>
     </div>
   </footer>
 
-  <script>
-    function toggleMenu() {
-      document.getElementById('mobileMenu').classList.toggle('open');
-    }
-  </script>
+  <script>function toggleNav() { document.getElementById('mobileNav').classList.toggle('open'); }</script>
 </body>
 </html>

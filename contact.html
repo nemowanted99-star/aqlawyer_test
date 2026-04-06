@@ -3,160 +3,148 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contacter Cabinet AQ Lawyer — Décrivez votre situation juridique ou fiscale et prenez rendez-vous en visioconférence. Réponse sous 48h ouvrées.">
+  <meta name="description" content="Contacter Cabinet AQ Lawyer — Décrivez votre situation juridique ou fiscale et prenez rendez-vous en visioconférence. Réponse sous 48h ouvrées. Première consultation 150€.">
   <title>Contact & Rendez-vous — Cabinet AQ Lawyer</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav style="background-color: var(--navy-dark);" class="fixed w-full top-0 z-50 shadow-lg">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="flex items-center justify-between h-16">
-        <a href="index.html" class="flex items-center gap-3 text-white no-underline">
-          <div style="background-color: var(--gold); color: var(--navy-dark);" class="w-8 h-8 rounded flex items-center justify-center font-bold text-sm">AQ</div>
-          <span class="font-semibold text-sm tracking-wide">Cabinet AQ Lawyer</span>
-        </a>
-        <div class="hidden md:flex items-center gap-6">
-          <a href="index.html" class="nav-link">Accueil</a>
-          <a href="le-cabinet.html" class="nav-link">Le Cabinet</a>
-          <a href="fiscalite-particuliers.html" class="nav-link">Fiscalité Particuliers</a>
-          <a href="fiscalite-entreprises.html" class="nav-link">Fiscalité Entreprises</a>
-          <a href="droit-des-affaires.html" class="nav-link">Droit des Affaires</a>
-          <a href="international.html" class="nav-link">International</a>
-          <a href="contact.html" class="btn-primary text-sm py-2 px-4 ml-2">Prendre rendez-vous</a>
-        </div>
-        <button class="md:hidden text-white p-2" onclick="toggleMenu()">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
+  <nav class="navbar">
+    <div class="inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-badge">AQ</div>
+        <span class="nav-logo-text">Cabinet AQ Lawyer</span>
+      </a>
+      <div class="nav-links">
+        <a href="le-cabinet.html" class="nav-link">Le Cabinet</a>
+        <a href="fiscalite-particuliers.html" class="nav-link">Fiscalité Particuliers</a>
+        <a href="fiscalite-entreprises.html" class="nav-link">Fiscalité Entreprises</a>
+        <a href="droit-des-affaires.html" class="nav-link">Droit des Affaires</a>
+        <a href="international.html" class="nav-link">International</a>
+        <a href="contact.html" class="nav-cta">Prendre rendez-vous</a>
       </div>
-      <div id="mobileMenu" class="mobile-menu md:hidden pb-4 border-t border-white border-opacity-10 mt-1">
-        <div class="flex flex-col gap-3 pt-4">
-          <a href="index.html" class="nav-link text-sm">Accueil</a>
-          <a href="le-cabinet.html" class="nav-link text-sm">Le Cabinet</a>
-          <a href="fiscalite-particuliers.html" class="nav-link text-sm">Fiscalité Particuliers</a>
-          <a href="fiscalite-entreprises.html" class="nav-link text-sm">Fiscalité Entreprises</a>
-          <a href="droit-des-affaires.html" class="nav-link text-sm">Droit des Affaires</a>
-          <a href="international.html" class="nav-link text-sm">International</a>
-        </div>
-      </div>
+      <button class="nav-hamburger" onclick="toggleNav()">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
     </div>
   </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="le-cabinet.html">Le Cabinet</a>
+    <a href="fiscalite-particuliers.html">Fiscalité Particuliers</a>
+    <a href="fiscalite-entreprises.html">Fiscalité Entreprises</a>
+    <a href="droit-des-affaires.html">Droit des Affaires</a>
+    <a href="international.html">International</a>
+    <a href="contact.html" style="color:var(--blue); font-weight:600;">Prendre rendez-vous →</a>
+  </div>
 
-  <!-- HERO CONTACT -->
-  <section class="hero pt-28 pb-12 px-6">
-    <div class="max-w-3xl mx-auto text-center">
-      <span class="section-tag">Contact</span>
-      <h1 class="text-4xl font-bold text-white mb-4" style="font-family: 'Playfair Display', serif;">
+  <!-- HERO -->
+  <section class="page-hero" style="padding:5.5rem 2rem 3.5rem; text-align:center;">
+    <div class="container-sm">
+      <span class="label" style="justify-content:center;">Contact</span>
+      <h1 class="chivo" style="font-size:clamp(2rem, 4vw, 3rem); font-weight:900; color:var(--white); line-height:1.1; margin-bottom:1rem;">
         Décrivez votre situation
       </h1>
-      <p class="text-gray-300 text-lg leading-relaxed">
-        Plus votre description est précise, plus notre réponse sera utile. Réponse sous 48h ouvrées.
+      <p style="color:rgba(255,255,255,0.65); font-size:1.05rem; line-height:1.7; max-width:480px; margin:0 auto;">
+        Plus votre description est précise, plus notre réponse sera utile. Nous vous répondons sous 48h ouvrées.
       </p>
     </div>
   </section>
 
-  <!-- INFOS PRATIQUES + FORMULAIRE -->
-  <section style="background-color: var(--cream);" class="py-16 px-6">
-    <div class="max-w-5xl mx-auto">
-      <div class="grid md:grid-cols-3 gap-10">
+  <!-- CONTENU PRINCIPAL -->
+  <section class="section" style="background:var(--off-white);">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:1fr 2fr; gap:3.5rem; align-items:start;">
 
         <!-- Colonne info -->
         <div>
-          <h3 class="font-bold text-lg mb-6" style="color: var(--navy); font-family: 'Playfair Display', serif;">Avant de nous écrire</h3>
+          <h3 class="chivo" style="color:var(--green-darker); font-size:1.1rem; margin-bottom:1.75rem;">Avant de nous écrire</h3>
 
-          <div class="space-y-5">
-            <div class="flex items-start gap-3">
-              <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 text-sm" style="background: var(--navy); color: white;">1</div>
+          <div style="display:flex; flex-direction:column; gap:1.5rem; margin-bottom:2rem;">
+            <div class="step-wrap" style="gap:1rem;">
+              <div class="step-num" style="width:36px; height:36px; font-size:0.85rem;">1</div>
               <div>
-                <p class="text-sm font-semibold mb-0.5" style="color: var(--navy);">Décrivez votre situation</p>
-                <p class="text-xs text-gray-500">Quelques lignes suffisent — pas besoin d'un dossier complet.</p>
+                <p style="font-size:0.85rem; font-weight:600; color:var(--green-darker); margin-bottom:0.2rem;">Décrivez votre situation</p>
+                <p style="font-size:0.8rem; color:var(--text-muted);">Quelques lignes suffisent — pas besoin d'un dossier complet.</p>
               </div>
             </div>
-            <div class="flex items-start gap-3">
-              <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 text-sm" style="background: var(--navy); color: white;">2</div>
+            <div class="step-wrap" style="gap:1rem;">
+              <div class="step-num" style="width:36px; height:36px; font-size:0.85rem;">2</div>
               <div>
-                <p class="text-sm font-semibold mb-0.5" style="color: var(--navy);">On vous répond sous 48h</p>
-                <p class="text-xs text-gray-500">En semaine et le week-end. Le cabinet répond dès que possible.</p>
+                <p style="font-size:0.85rem; font-weight:600; color:var(--green-darker); margin-bottom:0.2rem;">Réponse sous 48h ouvrées</p>
+                <p style="font-size:0.8rem; color:var(--text-muted);">En semaine et le week-end, selon disponibilité.</p>
               </div>
             </div>
-            <div class="flex items-start gap-3">
-              <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 text-sm" style="background: var(--navy); color: white;">3</div>
+            <div class="step-wrap" style="gap:1rem;">
+              <div class="step-num" style="width:36px; height:36px; font-size:0.85rem;">3</div>
               <div>
-                <p class="text-sm font-semibold mb-0.5" style="color: var(--navy);">On fixe un créneau en visio</p>
-                <p class="text-xs text-gray-500">45 min · 150€ · Partout en France · Sans déplacement.</p>
+                <p style="font-size:0.85rem; font-weight:600; color:var(--green-darker); margin-bottom:0.2rem;">Consultation en visio — 150€</p>
+                <p style="font-size:0.8rem; color:var(--text-muted);">45 min · Partout en France · Sans déplacement.</p>
               </div>
             </div>
           </div>
 
           <hr class="divider">
 
-          <div class="space-y-3">
-            <div class="flex items-center gap-3 text-sm text-gray-600">
-              <span>⏰</span>
-              <span>Réponse sous <strong>48h ouvrées</strong></span>
+          <div style="display:flex; flex-direction:column; gap:0.875rem; margin-bottom:2rem;">
+            <div style="display:flex; align-items:center; gap:0.75rem; font-size:0.82rem; color:var(--text-muted);">
+              <svg width="15" height="15" fill="none" stroke="var(--green-dark)" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              Réponse sous <strong style="color:var(--green-dark);">48h ouvrées</strong>
             </div>
-            <div class="flex items-center gap-3 text-sm text-gray-600">
-              <span>💻</span>
-              <span>Consultations <strong>100% en visio</strong></span>
+            <div style="display:flex; align-items:center; gap:0.75rem; font-size:0.82rem; color:var(--text-muted);">
+              <svg width="15" height="15" fill="none" stroke="var(--green-dark)" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              Consultations <strong style="color:var(--green-dark);">100% en visio</strong>
             </div>
-            <div class="flex items-center gap-3 text-sm text-gray-600">
-              <span>🔒</span>
-              <span><strong>Secret professionnel</strong> garanti</span>
+            <div style="display:flex; align-items:center; gap:0.75rem; font-size:0.82rem; color:var(--text-muted);">
+              <svg width="15" height="15" fill="none" stroke="var(--green-dark)" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              <strong style="color:var(--green-dark);">Secret professionnel</strong> garanti
             </div>
-            <div class="flex items-center gap-3 text-sm text-gray-600">
-              <span>🇬🇧</span>
-              <span><strong>English</strong> consultations available</span>
+            <div style="display:flex; align-items:center; gap:0.75rem; font-size:0.82rem; color:var(--text-muted);">
+              <svg width="15" height="15" fill="none" stroke="var(--green-dark)" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              Consultations en <strong style="color:var(--green-dark);">français & anglais</strong>
             </div>
           </div>
 
-          <hr class="divider">
-
-          <div class="pricing-card">
-            <p class="text-xs font-semibold tracking-widest uppercase mb-2" style="color: var(--gold);">Première consultation</p>
-            <p class="text-3xl font-bold text-white mb-1">150€</p>
-            <p class="text-xs mb-0" style="color: rgba(255,255,255,0.5);">Forfait fixe · 45 min · Visioconférence</p>
+          <div class="pricing-block">
+            <div style="font-size:0.68rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--blue); margin-bottom:0.75rem;">Première consultation</div>
+            <div class="chivo" style="font-size:2.75rem; font-weight:900; color:var(--white); line-height:1; margin-bottom:0.25rem;">150€</div>
+            <div style="font-size:0.78rem; color:rgba(255,255,255,0.45);">Forfait fixe · 45 min · Visioconférence</div>
           </div>
         </div>
 
         <!-- Formulaire -->
-        <div class="md:col-span-2 bg-white rounded-xl p-8 shadow-sm border" style="border-color: var(--cream-dark);">
-          <h3 class="font-bold text-xl mb-6" style="color: var(--navy); font-family: 'Playfair Display', serif;">Votre demande</h3>
+        <div style="background:var(--white); border-radius:12px; padding:2.5rem; border:1px solid var(--border);">
+          <h3 class="chivo" style="color:var(--green-darker); font-size:1.25rem; margin-bottom:2rem;">Votre demande</h3>
 
           <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
 
-            <!-- Identité -->
-            <div class="grid md:grid-cols-2 gap-4 mb-4">
-              <div>
-                <label class="form-label" for="prenom">Prénom <span class="text-red-500">*</span></label>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; margin-bottom:1.25rem;">
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="prenom">Prénom <span style="color:#ef4444;">*</span></label>
                 <input type="text" id="prenom" name="prenom" class="form-input" required placeholder="Votre prénom">
               </div>
-              <div>
-                <label class="form-label" for="nom">Nom <span class="text-red-500">*</span></label>
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="nom">Nom <span style="color:#ef4444;">*</span></label>
                 <input type="text" id="nom" name="nom" class="form-input" required placeholder="Votre nom">
               </div>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-4 mb-4">
-              <div>
-                <label class="form-label" for="email">Email <span class="text-red-500">*</span></label>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; margin-bottom:1.25rem;">
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="email">Email <span style="color:#ef4444;">*</span></label>
                 <input type="email" id="email" name="email" class="form-input" required placeholder="votre@email.com">
               </div>
-              <div>
+              <div class="form-group" style="margin-bottom:0;">
                 <label class="form-label" for="telephone">Téléphone</label>
                 <input type="tel" id="telephone" name="telephone" class="form-input" placeholder="06 xx xx xx xx">
               </div>
             </div>
 
-            <!-- Qualification -->
-            <div class="mb-4">
-              <label class="form-label" for="profil">Votre profil <span class="text-red-500">*</span></label>
+            <div class="form-group">
+              <label class="form-label" for="profil">Votre profil <span style="color:#ef4444;">*</span></label>
               <select id="profil" name="profil" class="form-select" required>
                 <option value="">Sélectionnez votre profil</option>
                 <option value="particulier">Particulier</option>
@@ -167,19 +155,19 @@
               </select>
             </div>
 
-            <div class="mb-4">
-              <label class="form-label" for="domaine">Domaine concerné <span class="text-red-500">*</span></label>
+            <div class="form-group">
+              <label class="form-label" for="domaine">Domaine concerné <span style="color:#ef4444;">*</span></label>
               <select id="domaine" name="domaine" class="form-select" required>
                 <option value="">Sélectionnez un domaine</option>
                 <option value="fiscal-particulier">Fiscalité des particuliers (contrôle, IFI, plus-values…)</option>
                 <option value="fiscal-entreprise">Fiscalité des entreprises (IS, TVA, contrôle…)</option>
-                <option value="droit-affaires">Droit des affaires (création société, cession, contrats…)</option>
+                <option value="droit-affaires">Droit des affaires (société, cession, contrats…)</option>
                 <option value="international">International (titre de séjour, non-résident…)</option>
                 <option value="autre">Autre / Je ne sais pas encore</option>
               </select>
             </div>
 
-            <div class="mb-4">
+            <div class="form-group">
               <label class="form-label" for="urgence">Niveau d'urgence</label>
               <select id="urgence" name="urgence" class="form-select">
                 <option value="">Sélectionnez</option>
@@ -190,126 +178,112 @@
               </select>
             </div>
 
-            <!-- Description -->
-            <div class="mb-6">
-              <label class="form-label" for="message">Décrivez votre situation <span class="text-red-500">*</span></label>
+            <div class="form-group">
+              <label class="form-label" for="message">Décrivez votre situation <span style="color:#ef4444;">*</span></label>
               <textarea id="message" name="message" class="form-textarea" required rows="5"
-                placeholder="En quelques lignes : quelle est votre situation ? Qu'est-ce que vous avez reçu ou que vous souhaitez faire ? Aucun détail technique requis — décrivez comme vous l'expliqueriez à un proche."></textarea>
-              <p class="text-xs text-gray-400 mt-1">Plus vous êtes précis, plus notre réponse sera utile. Vos données sont confidentielles.</p>
+                placeholder="En quelques lignes : quelle est votre situation ? Qu'est-ce que vous avez reçu ou souhaitez faire ? Pas de détail technique requis — décrivez comme vous l'expliqueriez à un proche."></textarea>
+              <p style="font-size:0.75rem; color:var(--text-muted); margin-top:0.375rem;">Plus vous êtes précis, plus notre réponse sera utile. Vos données sont strictement confidentielles.</p>
             </div>
 
-            <!-- Langue -->
-            <div class="mb-6">
-              <label class="form-label">Langue de consultation préférée</label>
-              <div class="flex gap-4 mt-1">
-                <label class="flex items-center gap-2 text-sm cursor-pointer">
-                  <input type="radio" name="langue" value="francais" checked class="accent-navy"> Français
+            <div class="form-group">
+              <label style="display:block; font-size:0.82rem; font-weight:600; color:var(--text); margin-bottom:0.5rem;">Langue de consultation préférée</label>
+              <div style="display:flex; gap:1.5rem;">
+                <label style="display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; cursor:pointer;">
+                  <input type="radio" name="langue" value="francais" checked> Français
                 </label>
-                <label class="flex items-center gap-2 text-sm cursor-pointer">
-                  <input type="radio" name="langue" value="anglais" class="accent-navy"> English
+                <label style="display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; cursor:pointer;">
+                  <input type="radio" name="langue" value="anglais"> English
                 </label>
-                <label class="flex items-center gap-2 text-sm cursor-pointer">
-                  <input type="radio" name="langue" value="les-deux" class="accent-navy"> Les deux
+                <label style="display:flex; align-items:center; gap:0.5rem; font-size:0.85rem; cursor:pointer;">
+                  <input type="radio" name="langue" value="les-deux"> Les deux
                 </label>
               </div>
             </div>
 
-            <!-- Consentement -->
-            <div class="mb-6">
-              <label class="flex items-start gap-3 cursor-pointer">
-                <input type="checkbox" id="rgpd" name="rgpd" required class="mt-1 flex-shrink-0">
-                <span class="text-xs text-gray-500 leading-relaxed">
-                  J'accepte que mes données soient utilisées dans le cadre de ma demande de contact. Ces informations sont strictement confidentielles et ne seront pas transmises à des tiers. <a href="#" class="underline" style="color: var(--navy);">En savoir plus</a>.
+            <div class="form-group">
+              <label style="display:flex; align-items:flex-start; gap:0.75rem; cursor:pointer;">
+                <input type="checkbox" id="rgpd" name="rgpd" required style="margin-top:0.2rem; flex-shrink:0;">
+                <span style="font-size:0.78rem; color:var(--text-muted); line-height:1.6;">
+                  J'accepte que mes données soient utilisées dans le cadre de ma demande de contact. Ces informations sont strictement confidentielles et ne seront pas transmises à des tiers.
                 </span>
               </label>
             </div>
 
-            <button type="submit" class="btn-primary w-full text-center text-base py-4">
-              Envoyer ma demande →
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; font-size:1rem; padding:1rem;">
+              Envoyer ma demande
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg>
             </button>
-            <p class="text-xs text-center text-gray-400 mt-3">Réponse sous 48h ouvrées · Aucun engagement</p>
+            <p style="font-size:0.75rem; text-align:center; color:var(--text-muted); margin-top:0.875rem;">Réponse sous 48h ouvrées · Aucun engagement</p>
 
           </form>
 
-          <!-- Message de confirmation (caché par défaut) -->
-          <div id="successMessage" class="hidden text-center py-10">
-            <div class="text-5xl mb-4">✅</div>
-            <h3 class="text-xl font-bold mb-2" style="color: var(--navy); font-family: 'Playfair Display', serif;">Message bien reçu !</h3>
-            <p class="text-gray-600 mb-2">Nous vous répondrons sous 48h ouvrées.</p>
-            <p class="text-sm text-gray-400">En attendant, n'hésitez pas à consulter nos pages d'information.</p>
-            <a href="index.html" class="btn-outline-gold mt-6 inline-block">Retour à l'accueil</a>
+          <!-- Succès -->
+          <div id="successMessage" style="display:none; text-align:center; padding:3rem 1rem;">
+            <div style="font-size:3rem; margin-bottom:1rem;">✅</div>
+            <h3 class="chivo" style="color:var(--green-darker); font-size:1.5rem; margin-bottom:0.75rem;">Message bien reçu !</h3>
+            <p style="color:var(--text-muted); margin-bottom:0.5rem;">Nous vous répondrons sous 48h ouvrées.</p>
+            <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:2rem;">En attendant, n'hésitez pas à consulter nos pages d'information.</p>
+            <a href="index.html" class="btn btn-outline-green">Retour à l'accueil</a>
           </div>
-
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="py-12 px-6">
-    <div class="max-w-6xl mx-auto">
-      <div class="grid md:grid-cols-4 gap-8 mb-10">
-        <div class="md:col-span-2">
-          <div class="flex items-center gap-3 mb-4">
-            <div style="background-color: var(--gold);" class="w-8 h-8 rounded flex items-center justify-center font-bold text-sm text-white">AQ</div>
-            <span class="font-semibold text-white">Cabinet AQ Lawyer</span>
+  <footer style="padding:3.5rem 2rem 2rem;">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:2fr 1fr 1fr; gap:3rem; margin-bottom:2.5rem;">
+        <div>
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
+            <div class="nav-logo-badge">AQ</div>
+            <span class="chivo" style="font-weight:700; color:var(--white); font-size:0.95rem;">Cabinet AQ Lawyer</span>
           </div>
-          <p class="text-sm leading-relaxed mb-4" style="color: rgba(255,255,255,0.55);">Avocat au Barreau des Hauts-de-Seine — Spécialiste en droit fiscal et droit des affaires.<br>Consultations 100% en visioconférence, partout en France.</p>
+          <p style="font-size:0.82rem; color:rgba(255,255,255,0.4); line-height:1.7;">Avocat au Barreau des Hauts-de-Seine · Droit fiscal & droit des affaires · Consultations en visioconférence partout en France.</p>
         </div>
         <div>
-          <h5 class="text-white font-semibold text-sm mb-4">Domaines</h5>
-          <ul class="space-y-2 text-sm">
-            <li><a href="fiscalite-particuliers.html">Fiscalité des particuliers</a></li>
-            <li><a href="fiscalite-entreprises.html">Fiscalité des entreprises</a></li>
-            <li><a href="droit-des-affaires.html">Droit des affaires</a></li>
-            <li><a href="international.html">Clients internationaux</a></li>
+          <h6 class="chivo" style="font-size:0.75rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:rgba(255,255,255,0.3); margin-bottom:1rem;">Domaines</h6>
+          <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem; font-size:0.82rem;">
+            <li><a href="fiscalite-particuliers.html">Fiscalité Particuliers</a></li>
+            <li><a href="fiscalite-entreprises.html">Fiscalité Entreprises</a></li>
+            <li><a href="droit-des-affaires.html">Droit des Affaires</a></li>
+            <li><a href="international.html">International</a></li>
           </ul>
         </div>
         <div>
-          <h5 class="text-white font-semibold text-sm mb-4">Le Cabinet</h5>
-          <ul class="space-y-2 text-sm">
+          <h6 class="chivo" style="font-size:0.75rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:rgba(255,255,255,0.3); margin-bottom:1rem;">Cabinet</h6>
+          <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem; font-size:0.82rem;">
             <li><a href="le-cabinet.html">À propos</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
-      <div class="border-t pt-8" style="border-color: rgba(255,255,255,0.1);">
-        <p class="text-xs text-center" style="color: rgba(255,255,255,0.35);">© 2026 Cabinet AQ Lawyer — Tous droits réservés · Avocat au Barreau des Hauts-de-Seine</p>
+      <div style="border-top:1px solid rgba(255,255,255,0.08); padding-top:1.5rem;">
+        <p style="font-size:0.74rem; color:rgba(255,255,255,0.2); text-align:center;">© 2026 Cabinet AQ Lawyer — Tous droits réservés · Avocat au Barreau des Hauts-de-Seine</p>
       </div>
     </div>
   </footer>
 
   <script>
-    function toggleMenu() {
-      document.getElementById('mobileMenu').classList.toggle('open');
-    }
+    function toggleNav() { document.getElementById('mobileNav').classList.toggle('open'); }
 
     function handleSubmit(e) {
       e.preventDefault();
       const form = document.getElementById('contactForm');
-      const success = document.getElementById('successMessage');
-
-      // Validation basique
       const required = form.querySelectorAll('[required]');
       let valid = true;
       required.forEach(field => {
-        if (!field.value || (field.type === 'checkbox' && !field.checked)) {
-          field.style.borderColor = '#EF4444';
+        const isCheckbox = field.type === 'checkbox';
+        if ((!isCheckbox && !field.value.trim()) || (isCheckbox && !field.checked)) {
+          field.style.outline = '2px solid #ef4444';
           valid = false;
         } else {
-          field.style.borderColor = '';
+          field.style.outline = '';
         }
       });
-
-      if (!valid) {
-        const firstError = form.querySelector('[required]:not(:valid), [required][type="checkbox"]:not(:checked)');
-        if (firstError) firstError.focus();
-        return;
-      }
-
-      // Afficher le message de succès (prototype — pas d'envoi réel)
-      form.classList.add('hidden');
-      success.classList.remove('hidden');
+      if (!valid) return;
+      form.style.display = 'none';
+      document.getElementById('successMessage').style.display = 'block';
     }
   </script>
 </body>
