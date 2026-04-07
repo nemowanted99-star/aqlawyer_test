@@ -93,6 +93,12 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.03em;
 }
 
+.nav-logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
