@@ -11,9 +11,9 @@
   --green-light:  #8f9e95;
   --green-bg:     #f0f4f1;
   --green-bg2:    #e8efe9;
-  --blue:         #4EBDF5;
-  --blue-dark:    #2aa8e8;
-  --blue-light:   #d0eefa;
+  --gold:         #C9A84C;
+  --gold-dark:    #A8892A;
+  --gold-light:   #F5E8C0;
   --white:        #FFFFFF;
   --off-white:    #fafcfb;
   --text:         #1a1a1a;
@@ -74,7 +74,7 @@ img { max-width: 100%; display: block; }
 
 .nav-logo-badge {
   width: 36px; height: 36px;
-  background: var(--blue);
+  background: var(--gold);
   color: var(--green-darker);
   border-radius: 6px;
   display: flex;
@@ -115,11 +115,11 @@ img { max-width: 100%; display: block; }
 }
 
 .nav-link.active {
-  color: var(--blue);
+  color: var(--gold);
 }
 
 .nav-cta {
-  background: var(--blue);
+  background: var(--gold);
   color: var(--green-darker);
   font-family: 'Chivo', sans-serif;
   font-size: 0.82rem;
@@ -132,7 +132,7 @@ img { max-width: 100%; display: block; }
 }
 
 .nav-cta:hover {
-  background: var(--blue-dark);
+  background: var(--gold-dark);
   transform: translateY(-1px);
 }
 
@@ -168,7 +168,7 @@ img { max-width: 100%; display: block; }
   transition: color 0.2s;
 }
 
-.mobile-nav a:hover { color: var(--blue); }
+.mobile-nav a:hover { color: var(--gold); }
 
 /* ---- Buttons ---- */
 .btn {
@@ -188,15 +188,15 @@ img { max-width: 100%; display: block; }
 }
 
 .btn-primary {
-  background: var(--blue);
+  background: var(--gold);
   color: var(--green-darker);
-  border-color: var(--blue);
+  border-color: var(--gold);
 }
 .btn-primary:hover {
-  background: var(--blue-dark);
-  border-color: var(--blue-dark);
+  background: var(--gold-dark);
+  border-color: var(--gold-dark);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(78,189,245,0.35);
+  box-shadow: 0 6px 20px rgba(201,168,76,0.4);
 }
 
 .btn-outline {
@@ -280,7 +280,7 @@ img { max-width: 100%; display: block; }
 }
 
 .trust-item .icon {
-  color: var(--blue);
+  color: var(--gold);
   font-size: 1rem;
   flex-shrink: 0;
 }
@@ -313,7 +313,7 @@ img { max-width: 100%; display: block; }
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--blue);
+  color: var(--gold);
   margin-bottom: 0.875rem;
 }
 
@@ -322,7 +322,7 @@ img { max-width: 100%; display: block; }
   display: inline-block;
   width: 20px;
   height: 2px;
-  background: var(--blue);
+  background: var(--gold);
 }
 
 /* ---- Cards ---- */
@@ -371,13 +371,13 @@ img { max-width: 100%; display: block; }
 }
 
 .entrance-card:hover {
-  border-color: var(--blue);
+  border-color: var(--gold);
   box-shadow: 0 16px 48px rgba(31,61,43,0.12);
   transform: translateY(-4px);
 }
 
 .entrance-card:hover::after {
-  color: var(--blue);
+  color: var(--gold);
   transform: translateX(4px);
 }
 
@@ -394,7 +394,7 @@ img { max-width: 100%; display: block; }
 }
 
 .entrance-card:hover .entrance-icon {
-  background: var(--blue-light);
+  background: var(--gold-light);
 }
 
 /* ---- Stats ---- */
@@ -451,8 +451,16 @@ img { max-width: 100%; display: block; }
   left: 1.5rem;
   font-family: 'Chivo', sans-serif;
   font-size: 5rem;
-  color: var(--blue-light);
+  color: var(--gold-light);
   line-height: 1;
+}
+
+.stars {
+  color: var(--gold);
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.75rem;
+  display: block;
 }
 
 .testimonial-text {
@@ -596,7 +604,7 @@ details summary::after {
   content: '+';
   font-size: 1.25rem;
   font-weight: 300;
-  color: var(--blue);
+  color: var(--gold);
   flex-shrink: 0;
   transition: transform 0.2s;
 }
@@ -628,7 +636,7 @@ footer a {
   transition: color 0.2s;
 }
 
-footer a:hover { color: var(--blue); }
+footer a:hover { color: var(--gold); }
 
 /* ---- Badge / Tag ---- */
 .badge {
@@ -642,10 +650,10 @@ footer a:hover { color: var(--blue); }
   letter-spacing: 0.04em;
 }
 
-.badge-blue {
-  background: rgba(78,189,245,0.15);
-  color: var(--blue);
-  border: 1px solid rgba(78,189,245,0.3);
+.badge-gold {
+  background: rgba(201,168,76,0.12);
+  color: var(--gold-dark);
+  border: 1px solid rgba(201,168,76,0.35);
 }
 
 .badge-green {
