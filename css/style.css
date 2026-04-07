@@ -682,15 +682,138 @@ footer a:hover { color: var(--gold); }
   margin: 1.75rem 0;
 }
 
-/* ---- Responsive ---- */
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+/* ---- Tablet (≤1024px) ---- */
+@media (max-width: 1024px) {
+  /* Footer 4-col → 2-col */
+  [style*="grid-template-columns:2fr 1fr 1fr 1fr"] {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 2rem !important;
+  }
+  /* Split 2-col with large gaps → tighten */
+  [style*="gap:5rem"] {
+    gap: 3rem !important;
+  }
+}
+
+/* ---- Mobile (≤768px) ---- */
 @media (max-width: 768px) {
+
+  /* Navigation */
   .nav-links { display: none; }
   .nav-hamburger { display: block; }
 
-  .section { padding: 3.5rem 1.25rem; }
-  .section-sm { padding: 2rem 1.25rem; }
+  /* Section padding */
+  .section { padding: 3rem 1.25rem !important; }
+  .section-sm { padding: 2rem 1.25rem !important; }
 
+  /* ── Grilles inline → colonne unique ── */
+  /* 2-col égales */
+  [style*="grid-template-columns:1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  /* 2-col asymétriques (process+pricing, FAQ, contact) */
+  [style*="grid-template-columns:1fr 1.6fr"],
+  [style*="grid-template-columns:1fr 2fr"],
+  [style*="grid-template-columns:2fr 1fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  /* Footer 4-col → 2-col */
+  [style*="grid-template-columns:2fr 1fr 1fr 1fr"],
+  [style*="grid-template-columns:2fr 1fr 1fr"] {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    min-height: auto !important;
+    padding-top: 68px !important;
+  }
+  .hero .container {
+    padding: 3rem 1.25rem 2.5rem !important;
+  }
+  /* Stats row dans le hero */
+  [style*="font-size:1.75rem; font-weight:900; color:var(--white)"] {
+    font-size: 1.4rem !important;
+  }
+  /* Séparateurs verticaux hero */
+  [style*="width:1px; background:rgba(255,255,255,0.12)"] {
+    display: none !important;
+  }
+
+  /* ── Trust strip ── */
+  .trust-strip .container > div {
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+  .trust-item {
+    padding: 0.6rem 1.25rem;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  /* ── Cartes ── */
+  .entrance-card { padding: 1.5rem; }
+  .card { padding: 1.25rem; }
   .stat-value { font-size: 2rem; }
 
-  .entrance-card { padding: 1.5rem; }
+  /* ── Pricing block ── */
+  .pricing-block { padding: 1.75rem; }
+
+  /* ── Testimonials ── */
+  .testimonial { padding: 1.5rem; }
+
+  /* ── Page hero ── */
+  .page-hero {
+    padding: 5.5rem 1.25rem 3rem !important;
+  }
+  .page-hero .container { padding: 0 !important; }
+
+  /* ── Breadcrumb hide on very small ── */
+  @media (max-width: 380px) {
+    .page-hero [style*="margin-bottom:1.5rem"] {
+      display: none !important;
+    }
+  }
+
+  /* ── Buttons ── */
+  .btn { width: 100%; justify-content: center; }
+  /* Exceptions : boutons dans nav et badges */
+  .nav-cta { width: auto !important; }
+  .btn-sm { width: auto !important; }
+
+  /* ── Footer ── */
+  footer { padding: 3rem 1.25rem 1.75rem !important; }
+
+  /* ── Contact form ── */
+  [style*="grid-template-columns:1fr 1fr; gap:1.25rem"] {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  /* ── LinkedIn section inner grid ── */
+  [style*="grid-template-columns:1fr 1fr; gap:3rem"] {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+}
+
+/* ---- Très petit écran (≤480px) ---- */
+@media (max-width: 480px) {
+  /* Footer → colonne unique */
+  [style*="grid-template-columns:2fr 1fr 1fr 1fr"],
+  [style*="grid-template-columns:2fr 1fr 1fr"],
+  [style*="grid-template-columns:1fr 1fr; gap:1.5rem"] {
+    grid-template-columns: 1fr !important;
+  }
+  /* Entrance cards déjà en auto-fit mais forcer sur très petit */
+  .entrance-card { padding: 1.25rem; }
+  /* Hero H1 */
+  .hero h1 { font-size: 2rem !important; }
+  .page-hero h1 { font-size: 1.875rem !important; }
 }
