@@ -782,10 +782,10 @@ footer a:hover { color: var(--gold); }
   }
 
   /* ── Buttons ── */
-  .btn { width: 100%; justify-content: center; }
+  .btn { width: 100%; justify-content: center; white-space: normal; text-align: center; line-height: 1.35; }
   /* Exceptions : boutons dans nav et badges */
-  .nav-cta { width: auto !important; }
-  .btn-sm { width: auto !important; }
+  .nav-cta { width: auto !important; white-space: nowrap; }
+  .btn-sm { width: auto !important; white-space: nowrap; }
 
   /* ── Footer ── */
   footer { padding: 3rem 1.25rem 1.75rem !important; }
