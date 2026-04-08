@@ -26,7 +26,7 @@
         <a href="international.html" class="nav-link">International</a>
         <a href="contact.html" class="nav-cta">Prendre rendez-vous</a>
       </div>
-      <button class="nav-hamburger" onclick="toggleNav()">
+      <button class="nav-hamburger" onclick="toggleNav()" aria-label="Menu">
         <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>
@@ -82,10 +82,10 @@
       <h2 class="chivo" style="font-size:1.5rem; color:var(--green-darker); margin-bottom:1.5rem;">2. Hébergement</h2>
       <div style="font-size:0.93rem; color:var(--text-muted); line-height:1.85;">
         <p style="margin-bottom:0.75rem;">Le site est hébergé par :</p>
-        <p style="margin-bottom:0.75rem;"><strong style="color:var(--green-darker);">Infomaniak Network SA</strong></p>
-        <p style="margin-bottom:0.75rem;">Rue Eugène-Marziano 25<br>
-        1227 Genève — Suisse</p>
-        <p style="margin-bottom:0;"><a href="https://www.infomaniak.com" target="_blank" rel="noopener noreferrer" style="color:var(--green-dark);">www.infomaniak.com</a></p>
+        <p style="margin-bottom:0.75rem;"><strong style="color:var(--green-darker);">Netlify, Inc.</strong></p>
+        <p style="margin-bottom:0.75rem;">512 2nd Street, Suite 200<br>
+        San Francisco, CA 94107 — États-Unis</p>
+        <p style="margin-bottom:0;"><a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer" style="color:var(--green-dark);">www.netlify.com</a></p>
       </div>
     </div>
   </section>
@@ -148,7 +148,7 @@
     <div class="container-sm">
       <h2 class="chivo" style="font-size:1.5rem; color:var(--green-darker); margin-bottom:1.5rem;">6. Cookies</h2>
       <div style="font-size:0.93rem; color:var(--text-muted); line-height:1.85;">
-        <p style="margin-bottom:1rem;">Ce site, dans sa version actuelle (prototype), <strong style="color:var(--green-darker);">n'utilise pas de cookies tiers</strong> à des fins publicitaires ou de suivi comportemental.</p>
+        <p style="margin-bottom:1rem;">Ce site <strong style="color:var(--green-darker);">n'utilise pas de cookies tiers</strong> à des fins publicitaires ou de suivi comportemental.</p>
         <p style="margin-bottom:1rem;">Des cookies strictement nécessaires au fonctionnement technique du site (session, préférences d'affichage) peuvent être déposés sur votre terminal. Ces cookies ne collectent aucune donnée personnelle identifiable et ne nécessitent pas de consentement préalable conformément aux recommandations de la CNIL.</p>
         <p style="margin-bottom:0;">Vous pouvez à tout moment désactiver les cookies depuis les paramètres de votre navigateur. La désactivation de certains cookies peut toutefois affecter votre expérience de navigation.</p>
       </div>
@@ -190,5 +190,6 @@
   </footer>
 
   <script>function toggleNav() { document.getElementById('mobileNav').classList.toggle('open'); }</script>
+  <script src="js/rgpd.js"></script>
 </body>
 </html>

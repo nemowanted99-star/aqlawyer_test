@@ -26,7 +26,7 @@
         <a href="international.html" class="nav-link">International</a>
         <a href="contact.html" class="nav-cta">Prendre rendez-vous</a>
       </div>
-      <button class="nav-hamburger" onclick="toggleNav()">
+      <button class="nav-hamburger" onclick="toggleNav()" aria-label="Menu">
         <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>
@@ -70,32 +70,32 @@
       </div>
       <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1.25rem;">
         <div class="card">
-          <div style="font-size:1.75rem; margin-bottom:1rem;">📊</div>
+          <div style="margin-bottom:1rem;"><svg width="32" height="32" fill="none" stroke="var(--green-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg></div>
           <h3 class="chivo" style="color:var(--green-darker); font-size:1rem; margin-bottom:0.5rem;">Impôt sur les sociétés (IS)</h3>
           <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.65;">Optimisation de la charge fiscale, traitement des déficits, régimes de groupe, conventions fiscales internationales.</p>
         </div>
         <div class="card">
-          <div style="font-size:1.75rem; margin-bottom:1rem;">🔄</div>
+          <div style="margin-bottom:1rem;"><svg width="32" height="32" fill="none" stroke="var(--green-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></div>
           <h3 class="chivo" style="color:var(--green-darker); font-size:1rem; margin-bottom:0.5rem;">TVA & taxes indirectes</h3>
           <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.65;">Vérification de la TVA déductible, régimes spéciaux, opérations intracommunautaires, litige TVA.</p>
         </div>
         <div class="card">
-          <div style="font-size:1.75rem; margin-bottom:1rem;">🔍</div>
+          <div style="margin-bottom:1rem;"><svg width="32" height="32" fill="none" stroke="var(--green-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
           <h3 class="chivo" style="color:var(--green-darker); font-size:1rem; margin-bottom:0.5rem;">Contrôle fiscal & redressement</h3>
           <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.65;">Accompagnement lors d'une vérification de comptabilité, réponse aux rectifications, négociation, recours si nécessaire.</p>
         </div>
         <div class="card">
-          <div style="font-size:1.75rem; margin-bottom:1rem;">💼</div>
+          <div style="margin-bottom:1rem;"><svg width="32" height="32" fill="none" stroke="var(--green-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
           <h3 class="chivo" style="color:var(--green-darker); font-size:1rem; margin-bottom:0.5rem;">Restructuration & transmission</h3>
           <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.65;">Fusion, scission, apport partiel d'actifs, holding, cession de fonds de commerce ou de titres — optimisation fiscale bout en bout.</p>
         </div>
         <div class="card">
-          <div style="font-size:1.75rem; margin-bottom:1rem;">🌐</div>
+          <div style="margin-bottom:1rem;"><svg width="32" height="32" fill="none" stroke="var(--green-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
           <h3 class="chivo" style="color:var(--green-darker); font-size:1rem; margin-bottom:0.5rem;">Prix de transfert</h3>
           <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.65;">Documentation des transactions intragroupe, conformité OCDE, défense en cas de redressement.</p>
         </div>
         <div class="card">
-          <div style="font-size:1.75rem; margin-bottom:1rem;">🏛️</div>
+          <div style="margin-bottom:1rem;"><svg width="32" height="32" fill="none" stroke="var(--green-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20h20M4 20V10M8 20V10M12 20V10M16 20V10M20 20V10M2 10l10-8 10 8"/></svg></div>
           <h3 class="chivo" style="color:var(--green-darker); font-size:1rem; margin-bottom:0.5rem;">Contentieux fiscal</h3>
           <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.65;">Représentation devant le Tribunal Administratif et la Cour Administrative d'Appel pour contester les impositions injustifiées.</p>
         </div>
@@ -112,17 +112,17 @@
       </div>
       <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:1.25rem;">
         <div style="background:var(--green-bg); border-radius:10px; padding:1.75rem; text-align:center;">
-          <div style="font-size:2rem; margin-bottom:1rem;">🚀</div>
+          <div style="margin-bottom:1rem;"><svg width="36" height="36" fill="none" stroke="var(--green-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
           <h4 class="chivo" style="color:var(--green-darker); margin-bottom:0.5rem;">Start-ups & PME</h4>
           <p style="font-size:0.83rem; color:var(--text-muted); line-height:1.6;">Structuration fiscale dès la création, optimisation IS, accompagnement lors d'une levée de fonds.</p>
         </div>
         <div style="background:var(--green-bg); border-radius:10px; padding:1.75rem; text-align:center;">
-          <div style="font-size:2rem; margin-bottom:1rem;">👔</div>
+          <div style="margin-bottom:1rem;"><svg width="36" height="36" fill="none" stroke="var(--green-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
           <h4 class="chivo" style="color:var(--green-darker); margin-bottom:0.5rem;">Dirigeants & associés</h4>
           <p style="font-size:0.83rem; color:var(--text-muted); line-height:1.6;">Rémunération vs dividendes, cession de titres, pacte d'associés, sortie du capital.</p>
         </div>
         <div style="background:var(--green-bg); border-radius:10px; padding:1.75rem; text-align:center;">
-          <div style="font-size:2rem; margin-bottom:1rem;">🏢</div>
+          <div style="margin-bottom:1rem;"><svg width="36" height="36" fill="none" stroke="var(--green-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M3 7l9-4 9 4M4 7v14M20 7v14M9 21V9h6v12"/></svg></div>
           <h4 class="chivo" style="color:var(--green-darker); margin-bottom:0.5rem;">Groupes & Holdings</h4>
           <p style="font-size:0.83rem; color:var(--text-muted); line-height:1.6;">Intégration fiscale, prix de transfert, conventions mère-filiales, restructurations complexes.</p>
         </div>
@@ -143,7 +143,7 @@
 
         <!-- Scénario 1 -->
         <div style="background:var(--green-bg); border-radius:10px; padding:1.75rem;">
-          <div style="font-size:1.75rem; margin-bottom:1rem;">📋</div>
+          <div style="margin-bottom:1rem;"><svg width="32" height="32" fill="none" stroke="var(--green-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12h6M9 16h4"/></svg></div>
           <h4 class="chivo" style="color:var(--green-darker); font-size:1rem; margin-bottom:0.75rem;">Vérification de comptabilité</h4>
           <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.65; margin-bottom:1rem;">Votre société fait l'objet d'une vérification de comptabilité. L'administration remet en cause la déductibilité de certaines charges.</p>
           <p style="font-size:0.85rem; line-height:1.65; color:var(--green-darker); font-weight:700;">→ Nous documentons et défendons la réalité et la nécessité de chaque charge contestée.</p>
@@ -151,7 +151,7 @@
 
         <!-- Scénario 2 -->
         <div style="background:var(--green-bg); border-radius:10px; padding:1.75rem;">
-          <div style="font-size:1.75rem; margin-bottom:1rem;">🔄</div>
+          <div style="margin-bottom:1rem;"><svg width="32" height="32" fill="none" stroke="var(--green-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></div>
           <h4 class="chivo" style="color:var(--green-darker); font-size:1rem; margin-bottom:0.75rem;">Redressement TVA intracom</h4>
           <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.65; margin-bottom:1rem;">L'administration remet en cause vos exonérations de TVA sur des opérations intracommunautaires.</p>
           <p style="font-size:0.85rem; line-height:1.65; color:var(--green-darker); font-weight:700;">→ Nous apportons les preuves de la réalité des livraisons et obtenons la décharge du rappel de TVA.</p>
@@ -159,7 +159,7 @@
 
         <!-- Scénario 3 -->
         <div style="background:var(--green-bg); border-radius:10px; padding:1.75rem;">
-          <div style="font-size:1.75rem; margin-bottom:1rem;">💼</div>
+          <div style="margin-bottom:1rem;"><svg width="32" height="32" fill="none" stroke="var(--green-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
           <h4 class="chivo" style="color:var(--green-darker); font-size:1rem; margin-bottom:0.75rem;">Cession de titres — plus-value</h4>
           <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.65; margin-bottom:1rem;">Vous cédez les titres de votre société et l'administration conteste l'abattement pour durée de détention que vous avez appliqué.</p>
           <p style="font-size:0.85rem; line-height:1.65; color:var(--green-darker); font-weight:700;">→ Nous défendons la qualification et la durée de détention et préservons le bénéfice de l'abattement.</p>
@@ -190,6 +190,18 @@
           <div class="faq-body">Oui, surtout pour prévenir. Un redressement fiscal peut coûter des dizaines de milliers d'euros. Une consultation à 150€ qui identifie un risque en amont est rentabilisée au premier problème évité.</div>
         </details>
       </div>
+    </div>
+  </section>
+
+  <!-- RÉSERVATION -->
+  <section class="section" style="background:var(--off-white);">
+    <div class="container-sm" style="text-align:center;">
+      <span class="label">Prendre rendez-vous</span>
+      <h2 class="chivo" style="font-size:clamp(1.75rem, 3vw, 2.25rem); color:var(--green-darker); margin-bottom:0.75rem;">Choisissez votre créneau</h2>
+      <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:2rem; line-height:1.7;">Consultation de 45 min · 150€ tarif fixe · Visioconférence · Paiement sécurisé à la réservation</p>
+      <div class="calendly-inline-widget" data-url="https://calendly.com/VOTRE_LIEN/consultation" style="min-width:320px; height:700px;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      <noscript><p style="margin-top:1.5rem; font-size:0.88rem; color:var(--text-muted);">Pour réserver, <a href="contact.html" style="color:var(--green-dark); font-weight:600;">contactez-nous directement →</a></p></noscript>
     </div>
   </section>
 
@@ -236,5 +248,6 @@
   </footer>
 
   <script>function toggleNav() { document.getElementById('mobileNav').classList.toggle('open'); }</script>
+  <script src="js/rgpd.js"></script>
 </body>
 </html>

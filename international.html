@@ -26,7 +26,7 @@
         <a href="international.html" class="nav-link active">International</a>
         <a href="contact.html" class="nav-cta">Prendre rendez-vous</a>
       </div>
-      <button class="nav-hamburger" onclick="toggleNav()">
+      <button class="nav-hamburger" onclick="toggleNav()" aria-label="Menu">
         <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>
@@ -49,7 +49,7 @@
             <span style="color:rgba(255,255,255,0.2); margin:0 0.5rem;">/</span>
             <span style="font-size:0.78rem; color:var(--gold);">International</span>
           </div>
-          <span class="badge badge-gold" style="font-size:0.68rem;">🇬🇧 English spoken</span>
+          <span class="badge badge-gold" style="font-size:0.68rem;">EN — English spoken</span>
         </div>
         <span class="label">International</span>
         <h1 class="chivo" style="font-size:clamp(2rem, 4.5vw, 3.25rem); font-weight:900; color:var(--white); line-height:1.1; margin-bottom:1.25rem;">
@@ -75,25 +75,25 @@
       </div>
       <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.25rem;">
         <div class="card">
-          <div style="font-size:1.75rem; margin-bottom:0.75rem;">📋</div>
+          <div style="margin-bottom:0.75rem;"><svg width="32" height="32" fill="none" stroke="var(--green-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12h6M9 16h4"/></svg></div>
           <h3 class="chivo" style="color:var(--green-darker); font-size:1rem; margin-bottom:0.25rem;">Titre de séjour & régularisation</h3>
           <div style="font-size:0.72rem; color:var(--gold); font-weight:600; margin-bottom:0.625rem;">Residence permit & regularisation</div>
           <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.65;">Constitution du dossier, renouvellement de titre, recours en cas de refus, contentieux administratif.</p>
         </div>
         <div class="card">
-          <div style="font-size:1.75rem; margin-bottom:0.75rem;">💶</div>
+          <div style="margin-bottom:0.75rem;"><svg width="32" height="32" fill="none" stroke="var(--green-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
           <h3 class="chivo" style="color:var(--green-darker); font-size:1rem; margin-bottom:0.25rem;">Fiscalité des non-résidents</h3>
           <div style="font-size:0.72rem; color:var(--gold); font-weight:600; margin-bottom:0.625rem;">Non-resident taxation</div>
           <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.65;">Imposition des revenus de source française, conventions fiscales bilatérales, optimisation franco-étrangère.</p>
         </div>
         <div class="card">
-          <div style="font-size:1.75rem; margin-bottom:0.75rem;">🏠</div>
+          <div style="margin-bottom:0.75rem;"><svg width="32" height="32" fill="none" stroke="var(--green-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
           <h3 class="chivo" style="color:var(--green-darker); font-size:1rem; margin-bottom:0.25rem;">Résidence fiscale & double imposition</h3>
           <div style="font-size:0.72rem; color:var(--gold); font-weight:600; margin-bottom:0.625rem;">Tax residency & double taxation</div>
           <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.65;">Détermination de la résidence fiscale, application des conventions bilatérales, transfert de domicile fiscal.</p>
         </div>
         <div class="card">
-          <div style="font-size:1.75rem; margin-bottom:0.75rem;">🏛️</div>
+          <div style="margin-bottom:0.75rem;"><svg width="32" height="32" fill="none" stroke="var(--green-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20h20M4 20V10M8 20V10M12 20V10M16 20V10M20 20V10M2 10l10-8 10 8"/></svg></div>
           <h3 class="chivo" style="color:var(--green-darker); font-size:1rem; margin-bottom:0.25rem;">Recours administratifs</h3>
           <div style="font-size:0.72rem; color:var(--gold); font-weight:600; margin-bottom:0.625rem;">Administrative appeals</div>
           <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.65;">Recours en cas de décision défavorable de la préfecture, OFPRA ou administration fiscale. Représentation devant les juridictions.</p>
@@ -112,17 +112,17 @@
       </div>
       <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:1.25rem; margin-bottom:2.5rem;">
         <div style="background:var(--green-bg); border-radius:10px; padding:1.75rem; text-align:center;">
-          <div style="font-size:2rem; margin-bottom:0.875rem;">🏡</div>
+          <div style="margin-bottom:0.875rem;"><svg width="36" height="36" fill="none" stroke="var(--green-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
           <h4 class="chivo" style="color:var(--green-darker); margin-bottom:0.5rem; font-size:0.95rem;">Agents immobiliers</h4>
           <p style="font-size:0.8rem; color:var(--text-muted); line-height:1.6;">Vos clients étrangers acquièrent un bien en France et ont besoin d'un conseil fiscal ou d'un titre de séjour.</p>
         </div>
         <div style="background:var(--green-bg); border-radius:10px; padding:1.75rem; text-align:center;">
-          <div style="font-size:2rem; margin-bottom:0.875rem;">✈️</div>
+          <div style="margin-bottom:0.875rem;"><svg width="36" height="36" fill="none" stroke="var(--green-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></div>
           <h4 class="chivo" style="color:var(--green-darker); margin-bottom:0.5rem; font-size:0.95rem;">Cabinets d'expatriation</h4>
           <p style="font-size:0.8rem; color:var(--text-muted); line-height:1.6;">Vos clients s'installent en France et ont besoin d'un accompagnement juridique et fiscal local.</p>
         </div>
         <div style="background:var(--green-bg); border-radius:10px; padding:1.75rem; text-align:center;">
-          <div style="font-size:2rem; margin-bottom:0.875rem;">🤝</div>
+          <div style="margin-bottom:0.875rem;"><svg width="36" height="36" fill="none" stroke="var(--green-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
           <h4 class="chivo" style="color:var(--green-darker); margin-bottom:0.5rem; font-size:0.95rem;">Avocats étrangers</h4>
           <p style="font-size:0.8rem; color:var(--text-muted); line-height:1.6;">Vous avez des clients qui ont besoin d'un conseil de droit français — nous sommes votre correspondant local.</p>
         </div>
@@ -166,6 +166,53 @@
     </div>
   </section>
 
+  <!-- CAS PRATIQUES -->
+  <section class="section" style="background:var(--white);">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:3rem;">
+        <span class="label">Cas pratiques · Case studies</span>
+        <h2 class="chivo" style="font-size:clamp(1.75rem, 3vw, 2.25rem); color:var(--green-darker);">Dans quel cas nous appeler ?</h2>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1.25rem;">
+
+        <div style="background:var(--green-bg); border-radius:10px; padding:1.75rem;">
+          <div style="margin-bottom:1rem;"><svg width="32" height="32" fill="none" stroke="var(--green-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12h6M9 16h4"/></svg></div>
+          <h4 class="chivo" style="color:var(--green-darker); font-size:1rem; margin-bottom:0.75rem;">Salarié étranger détaché en France</h4>
+          <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.65; margin-bottom:1rem;">Un ressortissant américain est muté à Paris pour 3 ans. Son employeur a besoin de clarifier le statut de résident fiscal, la convention fiscale franco-américaine et le titre de séjour.</p>
+          <p style="font-size:0.85rem; line-height:1.65; color:var(--green-darker); font-weight:700;">→ Nous déterminons le régime fiscal applicable, rédigeons les démarches de titre de séjour et optimisons sa situation franco-américaine.</p>
+        </div>
+
+        <div style="background:var(--green-bg); border-radius:10px; padding:1.75rem;">
+          <div style="margin-bottom:1rem;"><svg width="32" height="32" fill="none" stroke="var(--green-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <h4 class="chivo" style="color:var(--green-darker); font-size:1rem; margin-bottom:0.75rem;">Propriétaire non-résident d'un bien en France</h4>
+          <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.65; margin-bottom:1rem;">Un ressortissant britannique possède un appartement à Nice qu'il loue. L'administration lui réclame un complément d'impôt sur les revenus locatifs et conteste sa convention fiscale.</p>
+          <p style="font-size:0.85rem; line-height:1.65; color:var(--green-darker); font-weight:700;">→ Nous appliquons la convention franco-britannique, défendons le régime applicable et obtenons la réduction du redressement.</p>
+        </div>
+
+        <div style="background:var(--green-bg); border-radius:10px; padding:1.75rem;">
+          <div style="margin-bottom:1rem;"><svg width="32" height="32" fill="none" stroke="var(--green-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20h20M4 20V10M8 20V10M12 20V10M16 20V10M20 20V10M2 10l10-8 10 8"/></svg></div>
+          <h4 class="chivo" style="color:var(--green-darker); font-size:1rem; margin-bottom:0.75rem;">Refus de renouvellement de titre de séjour</h4>
+          <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.65; margin-bottom:1rem;">La préfecture refuse de renouveler le titre de séjour d'un ressortissant européen installé en France depuis 5 ans, invoquant une insuffisance de ressources.</p>
+          <p style="font-size:0.85rem; line-height:1.65; color:var(--green-darker); font-weight:700;">→ Nous déposons un recours gracieux motivé et si nécessaire saisissons le tribunal administratif pour obtenir l'annulation du refus.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RÉSERVATION -->
+  <section class="section" style="background:var(--off-white);">
+    <div class="container-sm" style="text-align:center;">
+      <span class="label">Book a consultation · Prendre rendez-vous</span>
+      <h2 class="chivo" style="font-size:clamp(1.75rem, 3vw, 2.25rem); color:var(--green-darker); margin-bottom:0.75rem;">Choisissez votre créneau</h2>
+      <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:0.5rem; line-height:1.7;">Consultation de 45 min · 150€ tarif fixe · Visioconférence · FR · EN</p>
+      <p style="color:var(--text-muted); font-size:0.85rem; margin-bottom:2rem; font-style:italic;">45-minute video consultation · Fixed fee 150€ · French or English</p>
+      <div class="calendly-inline-widget" data-url="https://calendly.com/VOTRE_LIEN/consultation" style="min-width:320px; height:700px;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      <noscript><p style="margin-top:1.5rem; font-size:0.88rem; color:var(--text-muted);">Pour réserver · To book: <a href="contact.html" style="color:var(--green-dark); font-weight:600;">contactez-nous directement →</a></p></noscript>
+    </div>
+  </section>
+
   <footer style="padding:3.5rem 2rem 2rem;">
     <div class="container">
       <div style="display:grid; grid-template-columns:2fr 1fr 1fr; gap:3rem; margin-bottom:2.5rem;">
@@ -199,5 +246,6 @@
   </footer>
 
   <script>function toggleNav() { document.getElementById('mobileNav').classList.toggle('open'); }</script>
+  <script src="js/rgpd.js"></script>
 </body>
 </html>

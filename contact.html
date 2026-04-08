@@ -26,7 +26,7 @@
         <a href="international.html" class="nav-link">International</a>
         <a href="contact.html" class="nav-cta">Prendre rendez-vous</a>
       </div>
-      <button class="nav-hamburger" onclick="toggleNav()">
+      <button class="nav-hamburger" onclick="toggleNav()" aria-label="Menu">
         <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>
@@ -118,7 +118,9 @@
         <div style="background:var(--white); border-radius:12px; padding:2.5rem; border:1px solid var(--border);">
           <h3 class="chivo" style="color:var(--green-darker); font-size:1.25rem; margin-bottom:2rem;">Votre demande</h3>
 
-          <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+          <form id="contactForm" name="contact" data-netlify="true" data-netlify-honeypot="bot-field" onsubmit="handleSubmit(event)" novalidate>
+            <input type="hidden" name="form-name" value="contact">
+            <input type="text" name="bot-field" style="display:none;" aria-hidden="true">
 
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; margin-bottom:1.25rem;">
               <div class="form-group" style="margin-bottom:0;">
@@ -218,7 +220,9 @@
 
           <!-- Succès -->
           <div id="successMessage" style="display:none; text-align:center; padding:3rem 1rem;">
-            <div style="font-size:3rem; margin-bottom:1rem;">✅</div>
+            <div style="display:flex; justify-content:center; margin-bottom:1rem;">
+              <svg width="64" height="64" fill="none" stroke="var(--green-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
             <h3 class="chivo" style="color:var(--green-darker); font-size:1.5rem; margin-bottom:0.75rem;">Message bien reçu !</h3>
             <p style="color:var(--text-muted); margin-bottom:0.5rem;">Nous vous répondrons sous 48h ouvrées.</p>
             <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:2rem;">En attendant, n'hésitez pas à consulter nos pages d'information.</p>
@@ -265,9 +269,11 @@
   <script>
     function toggleNav() { document.getElementById('mobileNav').classList.toggle('open'); }
 
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
       e.preventDefault();
       const form = document.getElementById('contactForm');
+
+      // Validation côté client
       const required = form.querySelectorAll('[required]');
       let valid = true;
       required.forEach(field => {
@@ -280,9 +286,25 @@
         }
       });
       if (!valid) return;
-      form.style.display = 'none';
-      document.getElementById('successMessage').style.display = 'block';
+
+      // Envoi Netlify Forms
+      try {
+        const res = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(new FormData(form)).toString()
+        });
+        if (res.ok) {
+          form.style.display = 'none';
+          document.getElementById('successMessage').style.display = 'block';
+        } else {
+          alert('Une erreur est survenue. Veuillez réessayer ou nous contacter directement.');
+        }
+      } catch {
+        alert('Une erreur réseau est survenue. Veuillez vérifier votre connexion et réessayer.');
+      }
     }
   </script>
+  <script src="js/rgpd.js"></script>
 </body>
 </html>
